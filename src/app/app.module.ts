@@ -1,12 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NgModule } from '@angular/core';
 
+import { AgmCoreModule } from '@agm/core';
+import { AppComponent } from './app.component';
+import { ContactService } from './contato/contact.service';
+import { ContatoComponent } from './contato/contato.component';
+import { HomeComponent } from './home/home.component';
+import { HttpModule } from '@angular/http';
+import { LocalizacaoComponent } from './localizacao/localizacao.component';
 import { MaterializeModule } from 'angular2-materialize';
 import { routing } from './app.routing';
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { LocalizacaoComponent } from './localizacao/localizacao.component';
-import { ContatoComponent } from './contato/contato.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
 @NgModule({
@@ -18,11 +22,19 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
     SobreNosComponent
   ],
   imports: [
-    BrowserModule,
-    MaterializeModule,
+		AgmCoreModule.forRoot({
+			apiKey: 'AIzaSyADQBsr0Qqs3lhCXOd63NYMFvB2eHdaa_A'
+		}),
+		BrowserModule,
+		FormsModule,
+		HttpModule,
+		MaterializeModule,
+		ReactiveFormsModule,
     routing
   ],
-  providers: [],
+  providers: [
+		ContactService
+	],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

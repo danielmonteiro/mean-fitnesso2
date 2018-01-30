@@ -1,6 +1,6 @@
 {{#if skipDefault}}
-	{{{body}}}
-{{else}}
+	 {{{body}}}
+{{ else }}
 	<!DOCTYPE html>
 	<html>
 
@@ -8,7 +8,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>fitnesso2</title>
+		<meta name="description" content="Studio Fitness O2">
+		<title>Studio Fitness O2</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link href="/styles/site.css" rel="stylesheet"> {{!-- This file provides the default styling for the KeystoneJS Content Editor - only renders when user is logged in and
 		admin--}} {{{isAdminEditorCSS user}}} {{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries //-
@@ -18,36 +19,76 @@
 				<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 
+		<style>
+			.navbar-brand img {
+				width: 40px;
+			}
+			.page-footer {
+				padding-top: 20px;
+			}
+			.footer-links {
+				padding: 30px;
+			}
+			.amber {
+    		background-color: #ffc107 !important;
+			}
+			.grey-text.text-darken-3 {
+    		color: #424242 !important;
+			}
+			.footer-links h5 {
+				font-size: 24px;
+				line-height: 1em;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin: 0.82rem 0 0.656rem 0;
+				font-family: "Roboto", sans-serif;
+			}
+			.footer-links a {
+				color: black;
+			}
+
+			@media (min-width: 767px) 
+			{
+				.navbar-right li a {
+					line-height: 90px;
+					padding: 0 15px;
+					color: black !important;
+					font-size: 14.5px;
+				}
+				.navbar-brand img {
+					width: 75px;
+				}
+			}
+		</style>
+
 	</head>
 
 	<body>
-		<div id="header">
-			<div class="container">
-				<div role="navigation" class="navbar navbar-default">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-								</button>
-							<a href="/" class="navbar-brand">fitnesso2</a>
-						</div>
-						<div class="collapse navbar-collapse">
-							<ul class="nav navbar-nav navbar-left">
-								{{# each navLinks}}
-								<li {{#ifeq ../section key}}class="active" {{else}}{{/ifeq}}>
-									<a href="{{ href }}">{{ label }}</a>
-								</li>
-								{{/each}}
-							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								{{#if user}}
-								<li><a href="/keystone/signout">Sign Out</a></li>
-								{{else}}
-								<li><a href="/keystone/signin">Sign In</a></li>
-								{{/if}}
-							</ul>
-						</div>
+		<div>
+			<div role="navigation" class="navbar navbar-default" style="background: white;">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+						</button>
+						<a href="/" class="navbar-brand" style="padding: 0 15px;">
+							<img src="assets/img/logotipo-fitness-o2.jpg" alt="Logotipo Fitness O2" style="margin-top: 3px;">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="/">Home</a></li>
+							<li><a href="/sobre-nos">Sobre nós</a></li>
+							<li><a href="/localizacao">Localização</a></li>
+							<li><a href="/blog">Blog</a></li>
+							<li><a href="/gallery">Galeria</a></li>
+							{{#if user}}
+							<li><a href="/keystone/signout">Sign Out</a></li>
+							{{else}}
+							<li><a href="/keystone/signin">Sign In</a></li>
+							{{/if}}
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -81,11 +122,45 @@
 			<!-- The content block should contain the body of your template's content-->
 			{{{body}}}
 		</div>
-		<div class="container">
-			<div id="footer">
-				<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
+
+		<footer class="page-footer grey darken-3">
+			<div class="amber footer-links">
+				<div class="container grey-text text-darken-3" style="padding: 0 15px;">
+					<div class="row">
+						<div class="col-xs-3 col-xs-offset-1 col-sm-2 col-sm-offset-3 col-md-2 col-md-offset-3 col-lg-1 col-lg-offset-5">
+							<a href="https://api.whatsapp.com/send?l=pt&phone=5512988001234" target="_blank"><img src="assets/img/whatsapp.png" style="width: 100%"></a>
+						</div>
+						<div class="col-xs-3 col-sm-2 col-md-2 col-lg-1">
+							<a href="https://www.facebook.com/studiofitnesso2/" target="_blank"><img src="assets/img/facebook.png" style="width: 100%"></a>
+						</div>
+						<div class="col-xs-3 col-sm-2 col-md-2 col-lg-1">
+							<a href="https://www.instagram.com/studiofitnesso2/" target="_blank"><img src="assets/img/instagram.png" style="width: 100%"></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-4 col-lg-4">
+							<h5>Services</h5>
+							<p><a href="#" class="grey-text text-darken-4">Link 1</a></p>
+							<p><a href="#" class="grey-text text-darken-4">Link 2</a></p>
+							<p><a href="#" class="grey-text text-darken-4">Link 3</a></p>
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4">
+							<h5>Info</h5>
+							<p><a href="#" class="grey-text text-darken-4">Link 1</a></p>
+							<p><a href="#" class="grey-text text-darken-4">Link 2</a></p>
+							<p><a href="#" class="grey-text text-darken-4">Link 3</a></p>
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4">
+							<h5>Studio Fitness</h5>
+							<p><a href="#" class="grey-text text-darken-4">Link 1</a></p>
+							<p><a href="#" class="grey-text text-darken-4">Link 2</a></p>
+							<p><a href="#" class="grey-text text-darken-4">Link 3</a></p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+		</footer>
+
 		{{!-- //- jQuery 1.11.3 is included by default, and required by both Bootstrap //- and the KeystoneJS Content Editor. If
 		you are not targeting IE8, //- you can upgrade to 2.1.4 (also bundled) for better performance. --}}
 		<script src="/js/jquery/jquery-1.11.3.min.js"></script>

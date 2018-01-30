@@ -1,10 +1,22 @@
-<div class="container">
-	<h1>Blog</h1>
-</div>
+<style>
+	.blog h2 a, .read-more a {
+		color: #ffc107;
+	}
+	.pagination li.active a, .list-group-item.active {
+		background-color: black;
+		border-color: black;
+		color: white;
+	}
+	.list-group-item.active:hover {
+		background-color: #ffc107;
+		border-color: #ffc107;
+	}
+</style>
+
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8 col-md-9">
-			<h4 class="text-weight-normal">Showing {{ data.posts.results.length}} post.</h4>
+			<!--h4 class="text-weight-normal">Showing {{ data.posts.results.length}} post.</h4-->
 			<div class="blog">
 				{{# each data.posts.results}}
 				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
@@ -20,8 +32,8 @@
 			</div>
 		</div>
 		<div class="col-sm-4 col-md-3">
-			<h2>Categories</h2>
-			<div style="margin-top: 70px;" class="list-group">
+			<h3>Categories</h3>
+			<div style="margin-top: 30px;" class="list-group">
 				<a href="/blog" class="active list-group-item">All Categories</a>
 				{{# each data.categories }}
 				<a href="{{categoryUrl key}}" class="false list-group-item">{{name}}</a>
