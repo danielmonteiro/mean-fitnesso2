@@ -7,7 +7,7 @@
     "start": "node keystone.js",
     "build": "ng build && npm run copy && npm run delete && npm run rename",
     "copy": "cpx dist/assets/**/* public/assets && cpx dist/*.js public && cpx dist/index.html templates/views",
-    "delete": "del-cli templates/views/index.hbs",
+    "delete": "del-cli templates/views/index.hbs dist/**/*",
     "rename": "rname templates/views/index.html templates/views/index.hbs"
   },
   "dependencies": {

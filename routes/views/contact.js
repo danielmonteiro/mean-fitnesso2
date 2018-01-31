@@ -1,7 +1,7 @@
 var keystone = require('keystone');
 var Contact = require('./../../models/contact');
 var ses = require('node-ses');
-var client = ses.createClient({ key: '', secret: '' });
+var client = ses.createClient({ key: process.env.AWS_SECRET_ACCESS_KEY, secret: process.env.AWS_ACCESS_KEY_ID });
 
 var htmlEmailTemplateInit = `
   <html>
@@ -30,8 +30,8 @@ exports = module.exports = function (req, res) {
 
 		// Envia email
 		client.sendEmail({
-			to: 'contatomeatnet@gmail.com',
-			from: 'contatomeatnet@gmail.com',
+			to: 'danielpinhomonteiro@gmail.com',
+			from: 'danielpinhomonteiro@gmail.com',
 			subject: 'Studio Fitness O2 - Novo contato recebido',
 			message: emailContent
 		}, function (err, data, result) {

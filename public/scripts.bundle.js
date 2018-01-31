@@ -24,7 +24,7 @@ module.exports = "/*!\r\n * Materialize v0.100.2 (http://materializecss.com)\r\n
 /***/ "../../../../raw-loader/index.js!../../../../source-map-loader/index.js!../../../../../src/init.js":
 /***/ (function(module, exports) {
 
-module.exports = "$(document).ready(function() {\n  $(\".button-collapse\").sideNav();\n  window.setInterval(function() {\n    $(\".carousel\").carousel('next')\n  }, 4500);\n});\n"
+module.exports = "$(document).ready(function() {\r\n  $(\".button-collapse\").sideNav();\r\n  window.setInterval(function() {\r\n    $(\".carousel\").carousel('next')\r\n  }, 4500);\r\n});\r\n"
 
 /***/ }),
 
