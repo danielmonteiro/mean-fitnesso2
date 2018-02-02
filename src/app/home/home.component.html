@@ -21,7 +21,7 @@
 
 <!-- CAROUSEL -->
 <div 
-  class="carousel carousel-slider" 
+  class="carousel carousel-slider hide-on-large-only" 
   [ngClass]="{ 'initialized': showInitialized }"
   materialize="carousel" 
   [materializeParams]="[{full_width: true, indicators: true}]" >
@@ -42,6 +42,29 @@
     </div>
 </div>
 
+<!-- CAROUSEL -->
+<div 
+  class="carousel carousel-slider hide-on-med-and-down" 
+  [ngClass]="{ 'initialized': showInitialized }"
+  materialize="carousel" 
+  [materializeParams]="[{full_width: true, indicators: true}]" >
+    <div class="carousel-fixed-item center">
+        <a routerLink="sobre-nos" class="btn waves-effect white black-text">Saiba mais</a>
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+      <div class="row">
+        <img class="col l6" src="assets/img/sobre-nos-12.jpg">
+        <img class="col l6" src="assets/img/sobre-nos-14.jpg">
+      </div>
+    </div>
+    <div class="carousel-item white-text" href="#three!">
+      <div class="row">
+        <img class="col l6" src="assets/img/sobre-nos-2.jpg">
+        <img class="col l6" src="assets/img/sobre-nos-10.jpg">
+      </div>
+    </div>
+</div>
+
 <!-- OUR SERVICES -->
 <div class="row center">
   <div class="col s12 grey darken-3" style="padding: 120px 0;">
@@ -53,45 +76,47 @@
 </div>
 
 <!-- Membership -->
-<div class="row" style="display: flex;">
-  <div class="col s12 m6" style="background: url(assets/img/sobre-nos-10.jpg); background-size: cover;"></div>
-  <div class="col s12 m6">
-    <div class="icon-block" style="padding: 100px 0;">
-      <h3 class="amber-text">Membership</h3>
-      <p>We’re big on community so take an opportunity to meet your neighbors. We’ve been called the “Cheers” of fitness on more than one occasion. We believe our motto is even more fitting: gym as it should be.</p>
+<div class="row-flex-on-large">
+  <div class="row">
+    <div class="col s12 l6 img-bg-cover" style="background: url(assets/img/sobre-nos-10.jpg); background-size: cover;"></div>
+    <div class="col s12 l6">
+      <div class="icon-block" style="padding: 100px 0;">
+        <h3 class="amber-text">Membership</h3>
+        <p>We’re big on community so take an opportunity to meet your neighbors. We’ve been called the “Cheers” of fitness on more than one occasion. We believe our motto is even more fitting: gym as it should be.</p>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Personal Trainning -->
-<div class="row" style="display: flex;">
-  <div class="col s12 m6 push-m6" style="background: url(assets/img/sobre-nos-5.jpg); background-size: cover;"></div>
-  <div class="col s12 m6 pull-m6">
-    <div class="icon-block" style="padding: 100px 0;">
-      <h3 class="black-text">Personal Training</h3>
-      <p>Our personal trainers are fully qualified to help you meet your fitness goals. From the person looking to start a workout routine for the first time to a marathon runner or bodybuilder, we have a personal trainer for you.</p>
+  <!-- Personal Trainning -->
+  <div class="row">
+    <div class="col s12 l6 push-l6 img-bg-cover" style="background: url(assets/img/sobre-nos-5.jpg); background-size: cover;"></div>
+    <div class="col s12 l6 pull-l6">
+      <div class="icon-block" style="padding: 100px 0;">
+        <h3 class="black-text">Personal Training</h3>
+        <p>Our personal trainers are fully qualified to help you meet your fitness goals. From the person looking to start a workout routine for the first time to a marathon runner or bodybuilder, we have a personal trainer for you.</p>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Group Classes -->
-<div class="row" style="display: flex;">
-	<div class="col s12 m6" style="background: url(assets/img/sobre-nos-8.jpg); background-size: cover;"></div>
-  <div class="col s12 m6">
-    <div class="icon-block" style="padding: 100px 0;">
-      <h3 class="black-text">Group Classes</h3>
-      <p>Our instructors and trainers are as dynamic as our facility, capable of progressively training any style of movement. From yoga to bootcamps, barre to CrossFit, and strength training to endurance, we have it all.</p>
+  <!-- Group Classes -->
+  <div class="row">
+    <div class="col s12 l6 img-bg-cover" style="background: url(assets/img/sobre-nos-8.jpg); background-size: cover;"></div>
+    <div class="col s12 l6">
+      <div class="icon-block" style="padding: 100px 0;">
+        <h3 class="black-text">Group Classes</h3>
+        <p>Our instructors and trainers are as dynamic as our facility, capable of progressively training any style of movement. From yoga to bootcamps, barre to CrossFit, and strength training to endurance, we have it all.</p>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- F7 Crossfit -->
-<div class="row" style="display: flex;">
-	<div class="col s12 m6 push-m6" style="background: url(assets/img/studio-fitness-o2.jpg); background-size: cover;"></div>
-  <div class="col s12 m6 pull-m6">
-    <div class="icon-block" style="padding: 100px 0;">
-      <h3 class="black-text">F7 Crossfit</h3>
-      <p>F7 CrossFit is CrossFit redefined. With an emphasis on injury free progress, we tailor the program to match you where you're at on your journey. Each class is designed to build throughout the year for those that are committed, while still providing such a well rounded program that even a quick drop in can provide great benefits. Check us out next to the turf at Studio Fitness.</p>
+  <!-- F7 Crossfit -->
+  <div class="row">
+    <div class="col s12 l6 push-l6 img-bg-cover" style="background: url(assets/img/studio-fitness-o2.jpg); background-size: cover;"></div>
+    <div class="col s12 l6 pull-l6">
+      <div class="icon-block" style="padding: 100px 0;">
+        <h3 class="black-text">F7 Crossfit</h3>
+        <p>F7 CrossFit is CrossFit redefined. With an emphasis on injury free progress, we tailor the program to match you where you're at on your journey. Each class is designed to build throughout the year for those that are committed, while still providing such a well rounded program that even a quick drop in can provide great benefits. Check us out next to the turf at Studio Fitness.</p>
+      </div>
     </div>
   </div>
 </div>

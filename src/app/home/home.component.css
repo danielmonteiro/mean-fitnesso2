@@ -19,3 +19,13 @@
 .row .col {
     padding: 0 0;
 }
+@media (min-width: 993px) {
+  .row-flex-on-large .row {
+    display: flex;
+  }
+}
+@media (max-width: 993px) {
+  .row-flex-on-large .img-bg-cover {
+    height: 400px;
+  }
+}
