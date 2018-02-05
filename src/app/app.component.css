@@ -1,3 +1,16 @@
+#navbar, #navbar a.button-collapse, #navbar a.button-collapse i {
+  height: 65px !important;
+  line-height: 65px !important;
+}
+.side-nav {
+  padding-top: 15px;
+}
+.side-nav li {
+    line-height: 40px;
+}
+.side-nav li > a {
+  height: 40px;
+}
 .footer-links {
   padding: 30px;
 }

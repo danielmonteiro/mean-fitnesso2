@@ -1,50 +1,62 @@
 <div class="container">
-
     <h3>Sobre nós</h3>
-    <p>Fundado em 2014, um novo modelo de negócio e de conceito de treinamento. Um ambiente moderno, completo, que visa a promoção da qualidade de vida a partir de treinos que prezam por eficiência e segurança, sem nunca perder o foco em resultados.</p>
-    <p>Nossos clientes são homens e mulheres que, independente da idade, desejam um estilo de vida, não para impressionar outros, mas em primeiro lugar, querem o bem estar, viver sem dores, com disposição para aproveitar a vida na companhia de quem ama.</p>
-    <p>Nossos treinos são personalizados, respeitando a individualidade do aluno e prezando pela otimização do tempo x eficiência, sempre indo além do objetivo do aluno, que normalmente envolve apenas a perda de gordura e definição muscular. Nossa meta é torná-lo apto para todas as atividades do dia a dia.</p>
+</div>
 
-    <div materialize="carousel" [materializeParams]="[{full_width: true}]" class="carousel carousel-slider center" data-indicators="true" style="height: 600px;">
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-1.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-2.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-3.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-4.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-5.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-6.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-7.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-8.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-9.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-10.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-11.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-12.jpg">
-        </div>
-        <div class="carousel-item white-text" href="#one!">
-            <img src="assets/img/sobre-nos-13.jpg">
-        </div>
+<div class="row no-margin fs-16">
+    <div class="col s12 l6 grey darken-3" style="padding: 20px;">
+        <p class="amber-text">Fundado em 2014, um novo modelo de negócio e de conceito de treinamento. Um ambiente moderno, completo, que visa a promoção da qualidade de vida a partir de treinos que prezam por eficiência e segurança, sem nunca perder o foco em resultados.</p>
     </div>
+    <div class="col s12 l6 img-bg-cover" style="background: url(assets/img/sobre-nos-1.jpg); background-size: cover; height: 350px;"></div>
+</div>
+<div class="row no-margin fs-16">
+    <div class="col s12 l6 amber" style="padding: 20px;">
+        <p class="white-text">Nossos clientes são homens e mulheres que, independente da idade, desejam um estilo de vida, não para impressionar outros, mas em primeiro lugar, querem o bem estar, viver sem dores, com disposição para aproveitar a vida na companhia de quem ama.</p>
+    </div>
+    <div class="col s12 l6 img-bg-cover" style="background: url(assets/img/sobre-nos-2.jpg); background-size: cover; height: 350px;"></div>
+</div>
+<div class="row no-margin fs-16">
+    <div class="col s12 l6 grey darken-3" style="padding: 20px;">
+        <p class="amber-text">Nossos treinos são personalizados, respeitando a individualidade do aluno e prezando pela otimização do tempo x eficiência, sempre indo além do objetivo do aluno, que normalmente envolve apenas a perda de gordura e definição muscular. Nossa meta é torná-lo apto para todas as atividades do dia a dia.</p>
+    </div>
+    <div class="col s12 l6 img-bg-cover" style="background: url(assets/img/sobre-nos-3.jpg); background-size: cover; height: 350px;"></div>
+</div>
 
+<div 
+    #carousel
+    class="carousel carousel-slider" 
+    [ngClass]="{ 'initialized': showInitialized }" 
+    materialize="carousel" 
+    [materializeParams]="[{fullWidth: true, indicators: true}]" 
+    [materializeActions]="actions">
+
+    <div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-4.jpg">
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-5.jpg">
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-6.jpg">
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-7.jpg">
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-8.jpg">
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-9.jpg">
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-10.jpg">
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-11.jpg">
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-12.jpg">
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-13.jpg">
+    </div>
 </div>

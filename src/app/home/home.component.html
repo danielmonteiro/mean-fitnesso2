@@ -1,76 +1,58 @@
-<div id="index-banner" class="parallax-container">
-  <div class="parallax" materialize="parallax"><img src="assets/img/fitness-o2-bg.jpeg" alt="Fitness O2"></div>
+<!-- CAROUSEL -->
+<div #carouselSmall class="carousel carousel-slider hide-on-large-only" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
+  [materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions">
+
+  <div class="carousel-item white-text" href="#one!">
+    <img src="assets/img/sobre-nos-12.jpg" class="responsive-img">
+  </div>
+  <div class="carousel-item white-text" href="#two!">
+    <img src="assets/img/sobre-nos-14.jpg" class="responsive-img">
+  </div>
+  <div class="carousel-item white-text" href="#three!">
+    <img src="assets/img/sobre-nos-2.jpg" class="responsive-img">
+  </div>
+  <div class="carousel-item white-text" href="#four!">
+    <img src="assets/img/sobre-nos-10.jpg" class="responsive-img">
+  </div>
+</div>
+
+<!-- CAROUSEL -->
+<div #carouselLarge class="carousel carousel-slider hide-on-med-and-down" [ngClass]="{ 'initialized': showInitialized }"
+  materialize="carousel" [materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions">
+  <div class="carousel-item white-text" href="#one!">
+    <div class="row">
+      <img class="col l6" src="assets/img/sobre-nos-12.jpg">
+      <img class="col l6" src="assets/img/sobre-nos-14.jpg">
+    </div>
+  </div>
+  <div class="carousel-item white-text" href="#three!">
+    <div class="row">
+      <img class="col l6" src="assets/img/sobre-nos-2.jpg">
+      <img class="col l6" src="assets/img/sobre-nos-10.jpg">
+    </div>
+  </div>
 </div>
 
 <!--   Icon Section   -->
 <div class="row block-1">
   <div class="col s12 m6 grey darken-3">
     <div class="icon-block">
-      <h3 class="grey-text text-lighten-2">Who can <br><span class="amber-text">join</span></h3>
-      <p class="white-text">Studio Fitness has something for everyone, no matter their age or fitness level. Our programs keep you constantly inspired and challenged so that you can meet your fitness goals.</p>
+      <h3 class="grey-text text-lighten-2 center-align">Who can <br><span class="amber-text">join</span></h3>
     </div>
   </div>
   <div class="col s12 m6 amber">
     <div class="icon-block">
-      <h3 class="white-text">Enjoy <br>a free trial</h3>
-      <p class="white-text">Thinking about hitting the gym but not sure what exercise to do? Why not come down for a free training session or group class and find out what fits. You're under no obligation and it is a great opportunity to come and talk to our fitness experts and try out our state-of-the-art equipment.</p>
-      <a class="waves-effect waves-light btn white amber-text">FREE 7 DAYS TRIAL</a>
+      <h3 class="white-text center-align">Enjoy <br>a free trial</h3>
     </div>
   </div>
 </div>
 
-<!-- CAROUSEL -->
-<div 
-  class="carousel carousel-slider hide-on-large-only" 
-  [ngClass]="{ 'initialized': showInitialized }"
-  materialize="carousel" 
-  [materializeParams]="[{full_width: true, indicators: true}]" >
-    <div class="carousel-fixed-item center">
-        <a routerLink="sobre-nos" class="btn waves-effect white black-text">Saiba mais</a>
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-      <img src="assets/img/sobre-nos-12.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#two!">
-      <img src="assets/img/sobre-nos-14.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#three!">
-      <img src="assets/img/sobre-nos-2.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#four!">
-      <img src="assets/img/sobre-nos-10.jpg">
-    </div>
-</div>
-
-<!-- CAROUSEL -->
-<div 
-  class="carousel carousel-slider hide-on-med-and-down" 
-  [ngClass]="{ 'initialized': showInitialized }"
-  materialize="carousel" 
-  [materializeParams]="[{full_width: true, indicators: true}]" >
-    <div class="carousel-fixed-item center">
-        <a routerLink="sobre-nos" class="btn waves-effect white black-text">Saiba mais</a>
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-      <div class="row">
-        <img class="col l6" src="assets/img/sobre-nos-12.jpg">
-        <img class="col l6" src="assets/img/sobre-nos-14.jpg">
-      </div>
-    </div>
-    <div class="carousel-item white-text" href="#three!">
-      <div class="row">
-        <img class="col l6" src="assets/img/sobre-nos-2.jpg">
-        <img class="col l6" src="assets/img/sobre-nos-10.jpg">
-      </div>
-    </div>
-</div>
 
 <!-- OUR SERVICES -->
 <div class="row center">
   <div class="col s12 grey darken-3" style="padding: 120px 0;">
     <div class="icon-block">
-      <h3 class="grey-text text-lighten-2">Our <span class="amber-text">services</span></h3>
-      <p class="white-text">If you are looking for group training, personal training, bootcamps, yoga, or CrossFit, Studio Fitness has everything.<p>
+      <h3 class="grey-text text-lighten-2 center-align">Our <span class="amber-text">services</span></h3>
     </div>
   </div>
 </div>
@@ -81,8 +63,7 @@
     <div class="col s12 l6 img-bg-cover" style="background: url(assets/img/sobre-nos-10.jpg); background-size: cover;"></div>
     <div class="col s12 l6">
       <div class="icon-block" style="padding: 100px 0;">
-        <h3 class="amber-text">Membership</h3>
-        <p>We’re big on community so take an opportunity to meet your neighbors. We’ve been called the “Cheers” of fitness on more than one occasion. We believe our motto is even more fitting: gym as it should be.</p>
+        <h3 class="amber-text center-align">Membership</h3>
       </div>
     </div>
   </div>
@@ -92,8 +73,7 @@
     <div class="col s12 l6 push-l6 img-bg-cover" style="background: url(assets/img/sobre-nos-5.jpg); background-size: cover;"></div>
     <div class="col s12 l6 pull-l6">
       <div class="icon-block" style="padding: 100px 0;">
-        <h3 class="black-text">Personal Training</h3>
-        <p>Our personal trainers are fully qualified to help you meet your fitness goals. From the person looking to start a workout routine for the first time to a marathon runner or bodybuilder, we have a personal trainer for you.</p>
+        <h3 class="black-text center-align">Personal Training</h3>
       </div>
     </div>
   </div>
@@ -103,8 +83,7 @@
     <div class="col s12 l6 img-bg-cover" style="background: url(assets/img/sobre-nos-8.jpg); background-size: cover;"></div>
     <div class="col s12 l6">
       <div class="icon-block" style="padding: 100px 0;">
-        <h3 class="black-text">Group Classes</h3>
-        <p>Our instructors and trainers are as dynamic as our facility, capable of progressively training any style of movement. From yoga to bootcamps, barre to CrossFit, and strength training to endurance, we have it all.</p>
+        <h3 class="black-text center-align">Group Classes</h3>
       </div>
     </div>
   </div>
@@ -114,8 +93,7 @@
     <div class="col s12 l6 push-l6 img-bg-cover" style="background: url(assets/img/studio-fitness-o2.jpg); background-size: cover;"></div>
     <div class="col s12 l6 pull-l6">
       <div class="icon-block" style="padding: 100px 0;">
-        <h3 class="black-text">F7 Crossfit</h3>
-        <p>F7 CrossFit is CrossFit redefined. With an emphasis on injury free progress, we tailor the program to match you where you're at on your journey. Each class is designed to build throughout the year for those that are committed, while still providing such a well rounded program that even a quick drop in can provide great benefits. Check us out next to the turf at Studio Fitness.</p>
+        <h3 class="black-text center-align">F7 Crossfit</h3>
       </div>
     </div>
   </div>

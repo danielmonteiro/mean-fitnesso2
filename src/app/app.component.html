@@ -1,6 +1,6 @@
-<nav class="white" role="navigation">
+<nav class="white" role="navigation" id="navbar">
   <div class="nav-wrapper container">
-    <a routerLink="" class="brand-logo black-text"><img src="assets/img/logotipo-fitness-o2.jpg" alt="Logotipo Fitness O2" style="margin-top: 3px; width: 75px;"></a>
+    <a routerLink="" class="brand-logo black-text"><img src="assets/img/logotipo-fitness-o2-header.jpg" alt="Logotipo Fitness O2" style="margin-top: 3px;"></a>
     <ul class="right hide-on-med-and-down">
       <li><a routerLink="" class="black-text">Home</a></li>
       <li><a routerLink="sobre-nos" class="black-text">Sobre nós</a></li>
@@ -10,13 +10,13 @@
     </ul>
 		
     <ul id="nav-mobile" class="side-nav">
-			<li><a routerLink="" class="black-text">Home 1</a></li>
-      <li><a routerLink="sobre-nos" class="black-text">Sobre nós</a></li>
-      <li><a [routerLink]="['localizacao']" class="black-text">Localização</a></li>
-			<li><a href="/blog" class="black-text">Blog</a></li>
-			<li><a href="/gallery" class="black-text">Galeria</a></li>
+			<li><a routerLink="">Home 1</a></li>
+      <li><a routerLink="sobre-nos">Sobre nós</a></li>
+      <li><a [routerLink]="['localizacao']">Localização</a></li>
+			<li><a href="/blog">Blog</a></li>
+			<li><a href="/gallery">Galeria</a></li>
     </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse" materialize="sideNav" [materializeParams]="[{closeOnClick:true}]"><i class="material-icons black-text">menu</i></a>
+    <a href="#" data-activates="nav-mobile" class="button-collapse right" materialize="sideNav" [materializeParams]="[{closeOnClick:true, edge: 'right'}]"><i class="material-icons black-text">menu</i></a>
   </div>
 </nav>
 
@@ -48,9 +48,9 @@
         </div>
         <div class="col s12 m6 l4">
           <h5>Info</h5>
-          <p><a href="#" class="grey-text text-darken-4">Link 1</a></p>
-          <p><a href="#" class="grey-text text-darken-4">Link 2</a></p>
-          <p><a href="#" class="grey-text text-darken-4">Link 3</a></p>
+          <p><a href="https://www.portalenaf.com.br" target="_blank" class="grey-text text-darken-4">PortalEnaf</a></p>
+          <p><a href="http://www.educacaofisica.com.br" target="_blank" class="grey-text text-darken-4">EducacaoFisica</a></p>
+          <p><a href="https://www.crefsp.gov.br" target="_blank" class="grey-text text-darken-4">CREFSP</a></p>
         </div>
         <div class="col s12 m6 l4">
           <h5>Studio Fitness</h5>
