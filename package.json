@@ -21,6 +21,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angular2-collapsible": "0.0.44",
     "angular2-materialize": "^15.1.7",
     "async": "2.1.4",
     "cloudinary": "1.7.0",

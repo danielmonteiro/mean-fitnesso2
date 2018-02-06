@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { CollapsibleModule } from 'angular2-collapsible';
 
 import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
@@ -25,7 +28,9 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 		AgmCoreModule.forRoot({
 			apiKey: 'AIzaSyADQBsr0Qqs3lhCXOd63NYMFvB2eHdaa_A'
 		}),
+		BrowserAnimationsModule,
 		BrowserModule,
+		CollapsibleModule,
 		FormsModule,
 		HttpModule,
 		MaterializeModule,

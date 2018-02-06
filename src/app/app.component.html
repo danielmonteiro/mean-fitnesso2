@@ -9,16 +9,27 @@
 			<li><a href="/gallery" class="black-text">Galeria</a></li>
     </ul>
 		
-    <ul id="nav-mobile" class="side-nav">
-			<li><a routerLink="">Home 1</a></li>
-      <li><a routerLink="sobre-nos">Sobre nós</a></li>
-      <li><a [routerLink]="['localizacao']">Localização</a></li>
-			<li><a href="/blog">Blog</a></li>
-			<li><a href="/gallery">Galeria</a></li>
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse right" materialize="sideNav" [materializeParams]="[{closeOnClick:true, edge: 'right'}]"><i class="material-icons black-text">menu</i></a>
+    <i class="material-icons black-text right icon-collapse" (click)="onClickSideNav()">menu</i>
+		
   </div>
 </nav>
+
+<collapsible-list [type]="'accordion'">
+
+	<collapsible-list-item>
+		<collapsible-header class="waves-effect">
+			<div #menuCollapse></div>
+		</collapsible-header>
+		<collapsible-body [expanded]="false">
+			<p><a (click)="onClickSideNav()" routerLink="">Home</a></p>
+			<p><a (click)="onClickSideNav()" routerLink="sobre-nos">Sobre nós</a></p>
+			<p><a (click)="onClickSideNav()" [routerLink]="['localizacao']">Localização</a></p>
+			<p><a (click)="onClickSideNav()" href="/blog">Blog</a></p>
+			<p><a (click)="onClickSideNav()" href="/gallery">Galeria</a></p>
+		</collapsible-body>
+	</collapsible-list-item>
+
+</collapsible-list>
 
 <router-outlet></router-outlet>
 

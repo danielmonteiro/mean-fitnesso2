@@ -1,6 +1,9 @@
-#navbar, #navbar a.button-collapse, #navbar a.button-collapse i {
+#navbar, #navbar a.button-collapse, #navbar a.button-collapse i, .icon-collapse {
   height: 65px !important;
   line-height: 65px !important;
+}
+.icon-collapse {
+	cursor: pointer;
 }
 .side-nav {
   padding-top: 15px;
@@ -26,4 +29,26 @@
 }
 .footer-links a:hover {
   text-decoration: underline;
+}
+collapsible-list {
+	margin: 0 !important;
+	border: 0;
+	box-shadow: none;
+}
+collapsible-header {
+	min-height: 0;
+	line-height: 0;
+	border: 0;
+}
+collapsible-body {
+	padding: 7.5px 0;
+}
+collapsible-body p {
+	padding: 10px 15px;
+	line-height: 20px;
+	margin: 0;
+}
+collapsible-body p a {
+	color: #777;
+	display: block;
 }

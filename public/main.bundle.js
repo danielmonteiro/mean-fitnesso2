@@ -21,7 +21,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#navbar, #navbar a.button-collapse, #navbar a.button-collapse i {\r\n  height: 65px !important;\r\n  line-height: 65px !important;\r\n}\r\n.side-nav {\r\n  padding-top: 15px;\r\n}\r\n.side-nav li {\r\n    line-height: 40px;\r\n}\r\n.side-nav li > a {\r\n  height: 40px;\r\n}\r\n.footer-links {\r\n  padding: 30px;\r\n}\r\n.footer-links h5 {\r\n  font-size: 24px;\r\n  line-height: 1em;\r\n  font-family: \"Poppins\";\r\n  font-weight: 700;\r\n  text-transform: uppercase;\r\n}\r\n.footer-links p {\r\n  margin: 0 0 3px;\r\n}\r\n.footer-links a:hover {\r\n  text-decoration: underline;\r\n}\r\n", ""]);
+exports.push([module.i, "#navbar, #navbar a.button-collapse, #navbar a.button-collapse i, .icon-collapse {\n  height: 65px !important;\n  line-height: 65px !important;\n}\n.icon-collapse {\n\tcursor: pointer;\n}\n.side-nav {\n  padding-top: 15px;\n}\n.side-nav li {\n    line-height: 40px;\n}\n.side-nav li > a {\n  height: 40px;\n}\n.footer-links {\n  padding: 30px;\n}\n.footer-links h5 {\n  font-size: 24px;\n  line-height: 1em;\n  font-family: \"Poppins\";\n  font-weight: 700;\n  text-transform: uppercase;\n}\n.footer-links p {\n  margin: 0 0 3px;\n}\n.footer-links a:hover {\n  text-decoration: underline;\n}\ncollapsible-list {\n\tmargin: 0 !important;\n\tborder: 0;\n\tbox-shadow: none;\n}\ncollapsible-header {\n\tmin-height: 0;\n\tline-height: 0;\n\tborder: 0;\n}\ncollapsible-body {\n\tpadding: 7.5px 0;\n}\ncollapsible-body p {\n\tpadding: 10px 15px;\n\tline-height: 20px;\n\tmargin: 0;\n}\ncollapsible-body p a {\n\tcolor: #777;\n\tdisplay: block;\n}\n", ""]);
 
 // exports
 
@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"white\" role=\"navigation\" id=\"navbar\">\r\n  <div class=\"nav-wrapper container\">\r\n    <a routerLink=\"\" class=\"brand-logo black-text\"><img src=\"assets/img/logotipo-fitness-o2-header.jpg\" alt=\"Logotipo Fitness O2\" style=\"margin-top: 3px;\"></a>\r\n    <ul class=\"right hide-on-med-and-down\">\r\n      <li><a routerLink=\"\" class=\"black-text\">Home</a></li>\r\n      <li><a routerLink=\"sobre-nos\" class=\"black-text\">Sobre nós</a></li>\r\n\t\t\t<li><a [routerLink]=\"['localizacao']\" class=\"black-text\">Localização</a></li>\r\n\t\t\t<li><a href=\"/blog\" class=\"black-text\">Blog</a></li>\r\n\t\t\t<li><a href=\"/gallery\" class=\"black-text\">Galeria</a></li>\r\n    </ul>\r\n\t\t\r\n    <ul id=\"nav-mobile\" class=\"side-nav\">\r\n\t\t\t<li><a routerLink=\"\">Home 1</a></li>\r\n      <li><a routerLink=\"sobre-nos\">Sobre nós</a></li>\r\n      <li><a [routerLink]=\"['localizacao']\">Localização</a></li>\r\n\t\t\t<li><a href=\"/blog\">Blog</a></li>\r\n\t\t\t<li><a href=\"/gallery\">Galeria</a></li>\r\n    </ul>\r\n    <a href=\"#\" data-activates=\"nav-mobile\" class=\"button-collapse right\" materialize=\"sideNav\" [materializeParams]=\"[{closeOnClick:true, edge: 'right'}]\"><i class=\"material-icons black-text\">menu</i></a>\r\n  </div>\r\n</nav>\r\n\r\n<router-outlet></router-outlet>\r\n\r\n<footer class=\"page-footer grey darken-3\">\r\n\t\r\n\t<app-contato></app-contato>\r\n\r\n  <div class=\"amber footer-links\">\r\n    <div class=\"container grey-text text-darken-3\" style=\"padding: 0 15px;\">\r\n      <div class=\"row\">\r\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\r\n          <a href=\"https://api.whatsapp.com/send?l=pt&phone=5512988001234\" target=\"_blank\"><img src=\"assets/img/whatsapp.png\" style=\"width: 100%\"></a>\r\n        </div>\r\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\r\n          <a href=\"https://www.facebook.com/studiofitnesso2/\" target=\"_blank\"><img src=\"assets/img/facebook.png\" style=\"width: 100%\"></a>\r\n        </div>\r\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\r\n          <a href=\"https://www.instagram.com/studiofitnesso2/\" target=\"_blank\"><img src=\"assets/img/instagram.png\" style=\"width: 100%\"></a>\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col s12 m6 l4\">\r\n          <h5>Services</h5>\r\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 1</a></p>\r\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 2</a></p>\r\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 3</a></p>\r\n        </div>\r\n        <div class=\"col s12 m6 l4\">\r\n          <h5>Info</h5>\r\n          <p><a href=\"https://www.portalenaf.com.br\" target=\"_blank\" class=\"grey-text text-darken-4\">PortalEnaf</a></p>\r\n          <p><a href=\"http://www.educacaofisica.com.br\" target=\"_blank\" class=\"grey-text text-darken-4\">EducacaoFisica</a></p>\r\n          <p><a href=\"https://www.crefsp.gov.br\" target=\"_blank\" class=\"grey-text text-darken-4\">CREFSP</a></p>\r\n        </div>\r\n        <div class=\"col s12 m6 l4\">\r\n          <h5>Studio Fitness</h5>\r\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 1</a></p>\r\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 2</a></p>\r\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 3</a></p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</footer>\r\n"
+module.exports = "<nav class=\"white\" role=\"navigation\" id=\"navbar\">\n  <div class=\"nav-wrapper container\">\n    <a routerLink=\"\" class=\"brand-logo black-text\"><img src=\"assets/img/logotipo-fitness-o2-header.jpg\" alt=\"Logotipo Fitness O2\" style=\"margin-top: 3px;\"></a>\n    <ul class=\"right hide-on-med-and-down\">\n      <li><a routerLink=\"\" class=\"black-text\">Home</a></li>\n      <li><a routerLink=\"sobre-nos\" class=\"black-text\">Sobre nós</a></li>\n\t\t\t<li><a [routerLink]=\"['localizacao']\" class=\"black-text\">Localização</a></li>\n\t\t\t<li><a href=\"/blog\" class=\"black-text\">Blog</a></li>\n\t\t\t<li><a href=\"/gallery\" class=\"black-text\">Galeria</a></li>\n    </ul>\n\t\t\n    <i class=\"material-icons black-text right icon-collapse\" (click)=\"onClickSideNav()\">menu</i>\n\t\t\n  </div>\n</nav>\n\n<collapsible-list [type]=\"'accordion'\">\n\n\t<collapsible-list-item>\n\t\t<collapsible-header class=\"waves-effect\">\n\t\t\t<div #menuCollapse></div>\n\t\t</collapsible-header>\n\t\t<collapsible-body [expanded]=\"false\">\n\t\t\t<p><a (click)=\"onClickSideNav()\" routerLink=\"\">Home</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" routerLink=\"sobre-nos\">Sobre nós</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" [routerLink]=\"['localizacao']\">Localização</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" href=\"/blog\">Blog</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" href=\"/gallery\">Galeria</a></p>\n\t\t</collapsible-body>\n\t</collapsible-list-item>\n\n</collapsible-list>\n\n<router-outlet></router-outlet>\n\n<footer class=\"page-footer grey darken-3\">\n\t\n\t<app-contato></app-contato>\n\n  <div class=\"amber footer-links\">\n    <div class=\"container grey-text text-darken-3\" style=\"padding: 0 15px;\">\n      <div class=\"row\">\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\n          <a href=\"https://api.whatsapp.com/send?l=pt&phone=5512988001234\" target=\"_blank\"><img src=\"assets/img/whatsapp.png\" style=\"width: 100%\"></a>\n        </div>\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\n          <a href=\"https://www.facebook.com/studiofitnesso2/\" target=\"_blank\"><img src=\"assets/img/facebook.png\" style=\"width: 100%\"></a>\n        </div>\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\n          <a href=\"https://www.instagram.com/studiofitnesso2/\" target=\"_blank\"><img src=\"assets/img/instagram.png\" style=\"width: 100%\"></a>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col s12 m6 l4\">\n          <h5>Services</h5>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 1</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 2</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 3</a></p>\n        </div>\n        <div class=\"col s12 m6 l4\">\n          <h5>Info</h5>\n          <p><a href=\"https://www.portalenaf.com.br\" target=\"_blank\" class=\"grey-text text-darken-4\">PortalEnaf</a></p>\n          <p><a href=\"http://www.educacaofisica.com.br\" target=\"_blank\" class=\"grey-text text-darken-4\">EducacaoFisica</a></p>\n          <p><a href=\"https://www.crefsp.gov.br\" target=\"_blank\" class=\"grey-text text-darken-4\">CREFSP</a></p>\n        </div>\n        <div class=\"col s12 m6 l4\">\n          <h5>Studio Fitness</h5>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 1</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 2</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 3</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n</footer>\n"
 
 /***/ }),
 
@@ -50,21 +50,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(renderer) {
+        this.renderer = renderer;
         this.title = 'app';
     }
+    AppComponent.prototype.onClickSideNav = function () {
+        var el = this.menuCollapse.nativeElement;
+        el.click();
+    };
     return AppComponent;
 }());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ViewChild */])('menuCollapse'),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ElementRef */]) === "function" && _a || Object)
+], AppComponent.prototype, "menuCollapse", void 0);
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]) === "function" && _b || Object])
 ], AppComponent);
 
+var _a, _b;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
@@ -76,16 +90,18 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__agm_core__ = __webpack_require__("../../../../@agm/core/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contato_contact_service__ = __webpack_require__("../../../../../src/app/contato/contact.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__contato_contato_component__ = __webpack_require__("../../../../../src/app/contato/contato.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__localizacao_localizacao_component__ = __webpack_require__("../../../../../src/app/localizacao/localizacao.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_angular2_materialize__ = __webpack_require__("../../../../angular2-materialize/dist/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__sobre_nos_sobre_nos_component__ = __webpack_require__("../../../../../src/app/sobre-nos/sobre-nos.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_collapsible__ = __webpack_require__("../../../../angular2-collapsible/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__agm_core__ = __webpack_require__("../../../../@agm/core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__contato_contact_service__ = __webpack_require__("../../../../../src/app/contato/contact.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__contato_contato_component__ = __webpack_require__("../../../../../src/app/contato/contato.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__localizacao_localizacao_component__ = __webpack_require__("../../../../../src/app/localizacao/localizacao.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_materialize__ = __webpack_require__("../../../../angular2-materialize/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__sobre_nos_sobre_nos_component__ = __webpack_require__("../../../../../src/app/sobre-nos/sobre-nos.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -93,6 +109,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -114,27 +132,29 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__localizacao_localizacao_component__["a" /* LocalizacaoComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__contato_contato_component__["a" /* ContatoComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__sobre_nos_sobre_nos_component__["a" /* SobreNosComponent */]
+            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__localizacao_localizacao_component__["a" /* LocalizacaoComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__contato_contato_component__["a" /* ContatoComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__sobre_nos_sobre_nos_component__["a" /* SobreNosComponent */]
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_3__agm_core__["a" /* AgmCoreModule */].forRoot({
+            __WEBPACK_IMPORTED_MODULE_5__agm_core__["a" /* AgmCoreModule */].forRoot({
                 apiKey: 'AIzaSyADQBsr0Qqs3lhCXOd63NYMFvB2eHdaa_A'
             }),
+            __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_4_angular2_collapsible__["a" /* CollapsibleModule */],
             __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_8__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_10_angular2_materialize__["a" /* MaterializeModule */],
+            __WEBPACK_IMPORTED_MODULE_10__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_12_angular2_materialize__["a" /* MaterializeModule */],
             __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* ReactiveFormsModule */],
-            __WEBPACK_IMPORTED_MODULE_11__app_routing__["a" /* routing */]
+            __WEBPACK_IMPORTED_MODULE_13__app_routing__["a" /* routing */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_5__contato_contact_service__["a" /* ContactService */]
+            __WEBPACK_IMPORTED_MODULE_7__contato_contact_service__["a" /* ContactService */]
         ],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -223,7 +243,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".input-field label,\r\n.input-field input[type=text]:focus + label,\r\n.input-field input[type=text]:focus,\r\n.input-field input[type=email]:focus + label,\r\n.input-field input[type=email]:focus\r\n.input-field textarea:focus + label,\r\n.input-field textarea:focus {\r\n color: #ffc107;\r\n}\r\ninput[type=text]:not(.browser-default):focus:not([readonly]),\r\ninput[type=email]:not(.browser-default):focus:not([readonly]),\r\ntextarea.materialize-textarea:focus:not([readonly]) {\r\n\tborder-bottom: 1px solid #ffc107;\r\n\tbox-shadow: 0 1px 0 0 #ffc107;\r\n}\r\ntextarea.materialize-textarea:focus:not([readonly]) + label {\r\n\tcolor: #ffc107;\r\n}\r\n.contact-us h4 {\r\n  font-size: 48px;\r\n  line-height: 1em;\r\n  font-family: \"Poppins\";\r\n  font-weight: 700;\r\n  text-transform: uppercase;\r\n}\r\n", ""]);
+exports.push([module.i, ".input-field label,\n.input-field input[type=text]:focus + label,\n.input-field input[type=text]:focus,\n.input-field input[type=email]:focus + label,\n.input-field input[type=email]:focus\n.input-field textarea:focus + label,\n.input-field textarea:focus {\n color: #ffc107;\n}\ninput[type=text]:not(.browser-default):focus:not([readonly]),\ninput[type=email]:not(.browser-default):focus:not([readonly]),\ntextarea.materialize-textarea:focus:not([readonly]) {\n\tborder-bottom: 1px solid #ffc107;\n\tbox-shadow: 0 1px 0 0 #ffc107;\n}\ntextarea.materialize-textarea:focus:not([readonly]) + label {\n\tcolor: #ffc107;\n}\n.contact-us h4 {\n  font-size: 48px;\n  line-height: 1em;\n  font-family: \"Poppins\";\n  font-weight: 700;\n  text-transform: uppercase;\n}\n", ""]);
 
 // exports
 
@@ -236,7 +256,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/contato/contato.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n\t<div class=\"center contact-us grey-text text-lighten-2\">\r\n\t\t<h4>Entre em <span class=\"amber-text\">contato</span></h4>\r\n\t</div>\r\n\t<div class=\"row\">\r\n\t\t<form class=\"col s12\" [formGroup]=\"myForm\" (ngSubmit)=\"onSubmit()\">\r\n\t\t\t<div class=\"row\">\r\n\t\t\t\t<div class=\"input-field col s12\">\r\n\t\t\t\t\t<input id=\"first_name\" type=\"text\" class=\"validate\" formControlName=\"name\">\r\n\t\t\t\t\t<label for=\"first_name\" class=\"active\">Nome</label>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"row\">\r\n\t\t\t\t<div class=\"input-field col s12\">\r\n\t\t\t\t\t<input id=\"email\" type=\"email\" class=\"validate\" formControlName=\"email\">\r\n\t\t\t\t\t<label for=\"email\" class=\"active\">Email</label>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"row\">\r\n\t\t\t\t<div class=\"input-field col s12\">\r\n\t\t\t\t\t<input id=\"phone\" type=\"text\" class=\"validate\" formControlName=\"phone\">\r\n\t\t\t\t\t<label for=\"phone\" class=\"active\">Telefone</label>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"row\">\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"input-field col s12\">\r\n\t\t\t\t\t\t<textarea id=\"message\" class=\"materialize-textarea\" formControlName=\"message\"></textarea>\r\n\t\t\t\t\t\t<label for=\"message\" class=\"active\">Mensagem</label>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"center\">\r\n\t\t\t\t<button class=\"btn amber waves-effect waves-light\" type=\"submit\" name=\"action\">Enviar\r\n            <i class=\"material-icons right\">send</i>\r\n          </button>\r\n\t\t\t</div>\r\n\r\n\t\t</form>\r\n\t</div>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\n\t<div class=\"center contact-us grey-text text-lighten-2\">\n\t\t<h4>Entre em <span class=\"amber-text\">contato</span></h4>\n\t</div>\n\t<div class=\"row\">\n\t\t<form class=\"col s12\" [formGroup]=\"myForm\" (ngSubmit)=\"onSubmit()\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"input-field col s12\">\n\t\t\t\t\t<input id=\"first_name\" type=\"text\" class=\"validate\" formControlName=\"name\">\n\t\t\t\t\t<label for=\"first_name\" class=\"active\">Nome</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"input-field col s12\">\n\t\t\t\t\t<input id=\"email\" type=\"email\" class=\"validate\" formControlName=\"email\">\n\t\t\t\t\t<label for=\"email\" class=\"active\">Email</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"input-field col s12\">\n\t\t\t\t\t<input id=\"phone\" type=\"text\" class=\"validate\" formControlName=\"phone\">\n\t\t\t\t\t<label for=\"phone\" class=\"active\">Telefone</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<div class=\"input-field col s12\">\n\t\t\t\t\t\t<textarea id=\"message\" class=\"materialize-textarea\" formControlName=\"message\"></textarea>\n\t\t\t\t\t\t<label for=\"message\" class=\"active\">Mensagem</label>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"center\">\n\t\t\t\t<button class=\"btn amber waves-effect waves-light\" type=\"submit\" name=\"action\">Enviar\n            <i class=\"material-icons right\">send</i>\n          </button>\n\t\t\t</div>\n\n\t\t</form>\n\t</div>\n</div>\n"
 
 /***/ }),
 
@@ -329,7 +349,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- CAROUSEL -->\r\n<div #carouselSmall class=\"carousel carousel-slider hide-on-large-only\" [ngClass]=\"{ 'initialized': showInitialized }\" materialize=\"carousel\"\r\n  [materializeParams]=\"[{fullWidth: true, indicators: true}]\" [materializeActions]=\"actions\">\r\n\r\n  <div class=\"carousel-item white-text\" href=\"#one!\">\r\n    <img src=\"assets/img/sobre-nos-12.jpg\" class=\"responsive-img\">\r\n  </div>\r\n  <div class=\"carousel-item white-text\" href=\"#two!\">\r\n    <img src=\"assets/img/sobre-nos-14.jpg\" class=\"responsive-img\">\r\n  </div>\r\n  <div class=\"carousel-item white-text\" href=\"#three!\">\r\n    <img src=\"assets/img/sobre-nos-2.jpg\" class=\"responsive-img\">\r\n  </div>\r\n  <div class=\"carousel-item white-text\" href=\"#four!\">\r\n    <img src=\"assets/img/sobre-nos-10.jpg\" class=\"responsive-img\">\r\n  </div>\r\n</div>\r\n\r\n<!-- CAROUSEL -->\r\n<div #carouselLarge class=\"carousel carousel-slider hide-on-med-and-down\" [ngClass]=\"{ 'initialized': showInitialized }\"\r\n  materialize=\"carousel\" [materializeParams]=\"[{fullWidth: true, indicators: true}]\" [materializeActions]=\"actions\">\r\n  <div class=\"carousel-item white-text\" href=\"#one!\">\r\n    <div class=\"row\">\r\n      <img class=\"col l6\" src=\"assets/img/sobre-nos-12.jpg\">\r\n      <img class=\"col l6\" src=\"assets/img/sobre-nos-14.jpg\">\r\n    </div>\r\n  </div>\r\n  <div class=\"carousel-item white-text\" href=\"#three!\">\r\n    <div class=\"row\">\r\n      <img class=\"col l6\" src=\"assets/img/sobre-nos-2.jpg\">\r\n      <img class=\"col l6\" src=\"assets/img/sobre-nos-10.jpg\">\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<!--   Icon Section   -->\r\n<div class=\"row block-1\">\r\n  <div class=\"col s12 m6 grey darken-3\">\r\n    <div class=\"icon-block\">\r\n      <h3 class=\"grey-text text-lighten-2 center-align\">Who can <br><span class=\"amber-text\">join</span></h3>\r\n    </div>\r\n  </div>\r\n  <div class=\"col s12 m6 amber\">\r\n    <div class=\"icon-block\">\r\n      <h3 class=\"white-text center-align\">Enjoy <br>a free trial</h3>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n<!-- OUR SERVICES -->\r\n<div class=\"row center\">\r\n  <div class=\"col s12 grey darken-3\" style=\"padding: 120px 0;\">\r\n    <div class=\"icon-block\">\r\n      <h3 class=\"grey-text text-lighten-2 center-align\">Our <span class=\"amber-text\">services</span></h3>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<!-- Membership -->\r\n<div class=\"row-flex-on-large\">\r\n  <div class=\"row\">\r\n    <div class=\"col s12 l6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-10.jpg); background-size: cover;\"></div>\r\n    <div class=\"col s12 l6\">\r\n      <div class=\"icon-block\" style=\"padding: 100px 0;\">\r\n        <h3 class=\"amber-text center-align\">Membership</h3>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- Personal Trainning -->\r\n  <div class=\"row\">\r\n    <div class=\"col s12 l6 push-l6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-5.jpg); background-size: cover;\"></div>\r\n    <div class=\"col s12 l6 pull-l6\">\r\n      <div class=\"icon-block\" style=\"padding: 100px 0;\">\r\n        <h3 class=\"black-text center-align\">Personal Training</h3>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- Group Classes -->\r\n  <div class=\"row\">\r\n    <div class=\"col s12 l6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-8.jpg); background-size: cover;\"></div>\r\n    <div class=\"col s12 l6\">\r\n      <div class=\"icon-block\" style=\"padding: 100px 0;\">\r\n        <h3 class=\"black-text center-align\">Group Classes</h3>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- F7 Crossfit -->\r\n  <div class=\"row\">\r\n    <div class=\"col s12 l6 push-l6 img-bg-cover\" style=\"background: url(assets/img/studio-fitness-o2.jpg); background-size: cover;\"></div>\r\n    <div class=\"col s12 l6 pull-l6\">\r\n      <div class=\"icon-block\" style=\"padding: 100px 0;\">\r\n        <h3 class=\"black-text center-align\">F7 Crossfit</h3>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<!--   Icon Section   -->\n<div class=\"row block-1\">\n\t<div class=\"col s12 m6 grey darken-3\">\n\t\t<!-- CAROUSEL -->\n\t\t<div #carouselSmall1 class=\"carousel carousel-slider hide-on-large-only\" [ngClass]=\"{ 'initialized': showInitialized }\" materialize=\"carousel\"\n\t\t [materializeParams]=\"[{fullWidth: true, indicators: true}]\" [materializeActions]=\"actions\">\n\n\t\t\t<div class=\"carousel-item white-text\" href=\"#one!\">\n\t\t\t\t<img src=\"assets/img/sobre-nos-12.jpg\" class=\"responsive-img\">\n\t\t\t</div>\n\t\t\t<div class=\"carousel-item white-text\" href=\"#two!\">\n\t\t\t\t<img src=\"assets/img/sobre-nos-14.jpg\" class=\"responsive-img\">\n\t\t\t</div>\n\t\t\t<div class=\"carousel-item white-text\" href=\"#three!\">\n\t\t\t\t<img src=\"assets/img/sobre-nos-2.jpg\" class=\"responsive-img\">\n\t\t\t</div>\n\t\t\t<div class=\"carousel-item white-text\" href=\"#four!\">\n\t\t\t\t<img src=\"assets/img/sobre-nos-10.jpg\" class=\"responsive-img\">\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- CAROUSEL -->\n\t\t<div #carouselLarge1 class=\"carousel carousel-slider hide-on-med-and-down\" [ngClass]=\"{ 'initialized': showInitialized }\"\n\t\t materialize=\"carousel\" [materializeParams]=\"[{fullWidth: true, indicators: true}]\" [materializeActions]=\"actions\">\n\t\t\t<div class=\"carousel-item white-text\" href=\"#one!\">\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<img class=\"col l6\" src=\"assets/img/sobre-nos-12.jpg\">\n\t\t\t\t\t<img class=\"col l6\" src=\"assets/img/sobre-nos-14.jpg\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"carousel-item white-text\" href=\"#three!\">\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<img class=\"col l6\" src=\"assets/img/sobre-nos-2.jpg\">\n\t\t\t\t\t<img class=\"col l6\" src=\"assets/img/sobre-nos-10.jpg\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n  <div class=\"col s12 m6 grey darken-3\">\n    <div class=\"icon-block\">\n      <h3 class=\"grey-text text-lighten-2 center-align\">Who can <br><span class=\"amber-text\">join</span></h3>\n    </div>\n  </div>\n</div>\n\n<!--   Icon Section   -->\n<div class=\"row block-1\">\n\t<div class=\"col s12 m6 push-m6 grey darken-3\">\n\t\t<!-- CAROUSEL -->\n\t\t<div #carouselSmall2 class=\"carousel carousel-slider hide-on-large-only\" [ngClass]=\"{ 'initialized': showInitialized }\" materialize=\"carousel\"\n\t\t [materializeParams]=\"[{fullWidth: true, indicators: true}]\" [materializeActions]=\"actions\">\n\n\t\t\t<div class=\"carousel-item white-text\" href=\"#one!\">\n\t\t\t\t<img src=\"assets/img/sobre-nos-1.jpg\" class=\"responsive-img\">\n\t\t\t</div>\n\t\t\t<div class=\"carousel-item white-text\" href=\"#two!\">\n\t\t\t\t<img src=\"assets/img/sobre-nos-6.jpg\" class=\"responsive-img\">\n\t\t\t</div>\n\t\t\t<div class=\"carousel-item white-text\" href=\"#three!\">\n\t\t\t\t<img src=\"assets/img/sobre-nos-7.jpg\" class=\"responsive-img\">\n\t\t\t</div>\n\t\t\t<div class=\"carousel-item white-text\" href=\"#four!\">\n\t\t\t\t<img src=\"assets/img/sobre-nos-8.jpg\" class=\"responsive-img\">\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- CAROUSEL -->\n\t\t<div #carouselLarge2 class=\"carousel carousel-slider hide-on-med-and-down\" [ngClass]=\"{ 'initialized': showInitialized }\"\n\t\t materialize=\"carousel\" [materializeParams]=\"[{fullWidth: true, indicators: true}]\" [materializeActions]=\"actions\">\n\t\t\t<div class=\"carousel-item white-text\" href=\"#one!\">\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<img class=\"col l6\" src=\"assets/img/sobre-nos-1.jpg\">\n\t\t\t\t\t<img class=\"col l6\" src=\"assets/img/sobre-nos-6.jpg\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"carousel-item white-text\" href=\"#three!\">\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<img class=\"col l6\" src=\"assets/img/sobre-nos-7.jpg\">\n\t\t\t\t\t<img class=\"col l6\" src=\"assets/img/sobre-nos-8.jpg\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div class=\"col s12 m6 pull-m6 grey darken-3\">\n\t\t<div class=\"icon-block\">\n\t\t\t<h3 class=\"grey-text text-lighten-2 center-align\">Who can <br><span class=\"amber-text\">join</span></h3>\n\t\t</div>\n\t</div>\n</div>\n\n<!--   Icon Section   -->\n<div class=\"row block-1\">\n\t<div class=\"col s12 amber center-align\">\n\t\t<div class=\"icon-block\" style=\"padding-bottom: 30px;\">\n\t\t\t<h3 class=\"white-text center-align\" style=\"margin-bottom: 20px\">Enjoy <br>a free trial</h3>\n\t\t\t<a class=\"btn white amber-text\" href=\"#\">FREE 7 DAYS TRIAL</a>\n\t\t</div>\n\t</div>\n\t<div class=\"col s12 m6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-10.jpg); background-size: cover;\"></div>\n</div>\n\n\n<!-- Membership -->\n<div class=\"row-flex-on-large\">\n    <!-- Personal Trainning -->\n  <div class=\"row\">\n    <div class=\"col s12 m6 push-m6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-5.jpg); background-size: cover;\"></div>\n    <div class=\"col s12 m6 pull-m6\">\n      <div class=\"icon-block\" style=\"padding: 100px 0;\">\n        <h3 class=\"black-text center-align\">Personal Training</h3>\n      </div>\n    </div>\n  </div>\n\n  <!-- Group Classes -->\n  <div class=\"row\">\n    <div class=\"col s12 m6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-8.jpg); background-size: cover;\"></div>\n    <div class=\"col s12 m6\">\n      <div class=\"icon-block\" style=\"padding: 100px 0;\">\n        <h3 class=\"black-text center-align\">Group Classes</h3>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -358,11 +378,11 @@ var HomeComponent = (function () {
     return HomeComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('carouselSmall'),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ViewChild */])('carouselSmall'),
     __metadata("design:type", Object)
 ], HomeComponent.prototype, "carouselSmall", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('carouselLarge'),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ViewChild */])('carouselLarge'),
     __metadata("design:type", Object)
 ], HomeComponent.prototype, "carouselLarge", void 0);
 HomeComponent = __decorate([
@@ -386,7 +406,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "agm-map {\r\n\theight: 400px;\r\n\twidth: 100%;\r\n}\r\n", ""]);
+exports.push([module.i, "agm-map {\n\theight: 400px;\n\twidth: 100%;\n}\n", ""]);
 
 // exports
 
@@ -399,7 +419,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/localizacao/localizacao.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- this creates a google map on the page with the given lat/lng from -->\r\n<!-- the component as the initial center of the map: -->\r\n<agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoom\">\r\n\t<agm-marker [latitude]=\"lat\" [longitude]=\"lng\">\r\n\t\t<agm-info-window>Studio Fitness O2</agm-info-window>\r\n\t</agm-marker>\r\n</agm-map>\r\n"
+module.exports = "<!-- this creates a google map on the page with the given lat/lng from -->\n<!-- the component as the initial center of the map: -->\n<agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoom\">\n\t<agm-marker [latitude]=\"lat\" [longitude]=\"lng\">\n\t\t<agm-info-window>Studio Fitness O2</agm-info-window>\n\t</agm-marker>\n</agm-map>\n"
 
 /***/ }),
 
@@ -492,7 +512,7 @@ var SobreNosComponent = (function () {
     return SobreNosComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('carousel'),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ViewChild */])('carousel'),
     __metadata("design:type", Object)
 ], SobreNosComponent.prototype, "carousel", void 0);
 SobreNosComponent = __decorate([

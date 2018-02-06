@@ -1,77 +1,111 @@
-<!-- CAROUSEL -->
-<div #carouselSmall class="carousel carousel-slider hide-on-large-only" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
-  [materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions">
+<!--   Icon Section   -->
+<div class="row block-1">
+	<div class="col s12 m6 grey darken-3">
+		<!-- CAROUSEL -->
+		<div #carouselSmall1 class="carousel carousel-slider hide-on-large-only" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
+		 [materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions">
 
-  <div class="carousel-item white-text" href="#one!">
-    <img src="assets/img/sobre-nos-12.jpg" class="responsive-img">
-  </div>
-  <div class="carousel-item white-text" href="#two!">
-    <img src="assets/img/sobre-nos-14.jpg" class="responsive-img">
-  </div>
-  <div class="carousel-item white-text" href="#three!">
-    <img src="assets/img/sobre-nos-2.jpg" class="responsive-img">
-  </div>
-  <div class="carousel-item white-text" href="#four!">
-    <img src="assets/img/sobre-nos-10.jpg" class="responsive-img">
-  </div>
-</div>
+			<div class="carousel-item white-text" href="#one!">
+				<img src="assets/img/sobre-nos-12.jpg" class="responsive-img">
+			</div>
+			<div class="carousel-item white-text" href="#two!">
+				<img src="assets/img/sobre-nos-14.jpg" class="responsive-img">
+			</div>
+			<div class="carousel-item white-text" href="#three!">
+				<img src="assets/img/sobre-nos-2.jpg" class="responsive-img">
+			</div>
+			<div class="carousel-item white-text" href="#four!">
+				<img src="assets/img/sobre-nos-10.jpg" class="responsive-img">
+			</div>
+		</div>
 
-<!-- CAROUSEL -->
-<div #carouselLarge class="carousel carousel-slider hide-on-med-and-down" [ngClass]="{ 'initialized': showInitialized }"
-  materialize="carousel" [materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions">
-  <div class="carousel-item white-text" href="#one!">
-    <div class="row">
-      <img class="col l6" src="assets/img/sobre-nos-12.jpg">
-      <img class="col l6" src="assets/img/sobre-nos-14.jpg">
-    </div>
-  </div>
-  <div class="carousel-item white-text" href="#three!">
-    <div class="row">
-      <img class="col l6" src="assets/img/sobre-nos-2.jpg">
-      <img class="col l6" src="assets/img/sobre-nos-10.jpg">
+		<!-- CAROUSEL -->
+		<div #carouselLarge1 class="carousel carousel-slider hide-on-med-and-down" [ngClass]="{ 'initialized': showInitialized }"
+		 materialize="carousel" [materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions">
+			<div class="carousel-item white-text" href="#one!">
+				<div class="row">
+					<img class="col l6" src="assets/img/sobre-nos-12.jpg">
+					<img class="col l6" src="assets/img/sobre-nos-14.jpg">
+				</div>
+			</div>
+			<div class="carousel-item white-text" href="#three!">
+				<div class="row">
+					<img class="col l6" src="assets/img/sobre-nos-2.jpg">
+					<img class="col l6" src="assets/img/sobre-nos-10.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+  <div class="col s12 m6 grey darken-3">
+    <div class="icon-block">
+      <h3 class="grey-text text-lighten-2 center-align">Who can <br><span class="amber-text">join</span></h3>
     </div>
   </div>
 </div>
 
 <!--   Icon Section   -->
 <div class="row block-1">
-  <div class="col s12 m6 grey darken-3">
-    <div class="icon-block">
-      <h3 class="grey-text text-lighten-2 center-align">Who can <br><span class="amber-text">join</span></h3>
-    </div>
-  </div>
-  <div class="col s12 m6 amber">
-    <div class="icon-block">
-      <h3 class="white-text center-align">Enjoy <br>a free trial</h3>
-    </div>
-  </div>
+	<div class="col s12 m6 push-m6 grey darken-3">
+		<!-- CAROUSEL -->
+		<div #carouselSmall2 class="carousel carousel-slider hide-on-large-only" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
+		 [materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions">
+
+			<div class="carousel-item white-text" href="#one!">
+				<img src="assets/img/sobre-nos-1.jpg" class="responsive-img">
+			</div>
+			<div class="carousel-item white-text" href="#two!">
+				<img src="assets/img/sobre-nos-6.jpg" class="responsive-img">
+			</div>
+			<div class="carousel-item white-text" href="#three!">
+				<img src="assets/img/sobre-nos-7.jpg" class="responsive-img">
+			</div>
+			<div class="carousel-item white-text" href="#four!">
+				<img src="assets/img/sobre-nos-8.jpg" class="responsive-img">
+			</div>
+		</div>
+
+		<!-- CAROUSEL -->
+		<div #carouselLarge2 class="carousel carousel-slider hide-on-med-and-down" [ngClass]="{ 'initialized': showInitialized }"
+		 materialize="carousel" [materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions">
+			<div class="carousel-item white-text" href="#one!">
+				<div class="row">
+					<img class="col l6" src="assets/img/sobre-nos-1.jpg">
+					<img class="col l6" src="assets/img/sobre-nos-6.jpg">
+				</div>
+			</div>
+			<div class="carousel-item white-text" href="#three!">
+				<div class="row">
+					<img class="col l6" src="assets/img/sobre-nos-7.jpg">
+					<img class="col l6" src="assets/img/sobre-nos-8.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m6 pull-m6 grey darken-3">
+		<div class="icon-block">
+			<h3 class="grey-text text-lighten-2 center-align">Who can <br><span class="amber-text">join</span></h3>
+		</div>
+	</div>
 </div>
 
-
-<!-- OUR SERVICES -->
-<div class="row center">
-  <div class="col s12 grey darken-3" style="padding: 120px 0;">
-    <div class="icon-block">
-      <h3 class="grey-text text-lighten-2 center-align">Our <span class="amber-text">services</span></h3>
-    </div>
-  </div>
+<!--   Icon Section   -->
+<div class="row block-1">
+	<div class="col s12 amber center-align">
+		<div class="icon-block" style="padding-bottom: 30px;">
+			<h3 class="white-text center-align" style="margin-bottom: 20px">Enjoy <br>a free trial</h3>
+			<a class="btn white amber-text" href="#">FREE 7 DAYS TRIAL</a>
+		</div>
+	</div>
+	<div class="col s12 m6 img-bg-cover" style="background: url(assets/img/sobre-nos-10.jpg); background-size: cover;"></div>
 </div>
+
 
 <!-- Membership -->
 <div class="row-flex-on-large">
+    <!-- Personal Trainning -->
   <div class="row">
-    <div class="col s12 l6 img-bg-cover" style="background: url(assets/img/sobre-nos-10.jpg); background-size: cover;"></div>
-    <div class="col s12 l6">
-      <div class="icon-block" style="padding: 100px 0;">
-        <h3 class="amber-text center-align">Membership</h3>
-      </div>
-    </div>
-  </div>
-
-  <!-- Personal Trainning -->
-  <div class="row">
-    <div class="col s12 l6 push-l6 img-bg-cover" style="background: url(assets/img/sobre-nos-5.jpg); background-size: cover;"></div>
-    <div class="col s12 l6 pull-l6">
+    <div class="col s12 m6 push-m6 img-bg-cover" style="background: url(assets/img/sobre-nos-5.jpg); background-size: cover;"></div>
+    <div class="col s12 m6 pull-m6">
       <div class="icon-block" style="padding: 100px 0;">
         <h3 class="black-text center-align">Personal Training</h3>
       </div>
@@ -80,21 +114,12 @@
 
   <!-- Group Classes -->
   <div class="row">
-    <div class="col s12 l6 img-bg-cover" style="background: url(assets/img/sobre-nos-8.jpg); background-size: cover;"></div>
-    <div class="col s12 l6">
+    <div class="col s12 m6 img-bg-cover" style="background: url(assets/img/sobre-nos-8.jpg); background-size: cover;"></div>
+    <div class="col s12 m6">
       <div class="icon-block" style="padding: 100px 0;">
         <h3 class="black-text center-align">Group Classes</h3>
       </div>
     </div>
   </div>
 
-  <!-- F7 Crossfit -->
-  <div class="row">
-    <div class="col s12 l6 push-l6 img-bg-cover" style="background: url(assets/img/studio-fitness-o2.jpg); background-size: cover;"></div>
-    <div class="col s12 l6 pull-l6">
-      <div class="icon-block" style="padding: 100px 0;">
-        <h3 class="black-text center-align">F7 Crossfit</h3>
-      </div>
-    </div>
-  </div>
 </div>
