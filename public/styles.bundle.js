@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);", ""]);
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\nnav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {\n  height: 90px !important;\n}\nnav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {\n  line-height: 90px !important;\n}\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\n\r\nnav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {\r\n  height: 90px !important;\r\n}\r\nnav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {\r\n  line-height: 90px !important;\r\n}\r\n", ""]);
 
 // exports
 
