@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"white\" role=\"navigation\" id=\"navbar\">\n  <div class=\"nav-wrapper container\">\n    <a routerLink=\"\" class=\"brand-logo black-text\"><img src=\"assets/img/logotipo-fitness-o2-header.jpg\" alt=\"Logotipo Fitness O2\" style=\"margin-top: 3px;\"></a>\n    <ul class=\"right hide-on-med-and-down\">\n      <li><a routerLink=\"\" class=\"black-text\">Home</a></li>\n      <li><a routerLink=\"sobre-nos\" class=\"black-text\">Sobre nós</a></li>\n\t\t\t<li><a [routerLink]=\"['localizacao']\" class=\"black-text\">Localização</a></li>\n\t\t\t<li><a href=\"/blog\" class=\"black-text\">Blog</a></li>\n\t\t\t<li><a href=\"/gallery\" class=\"black-text\">Galeria</a></li>\n    </ul>\n\t\t\n    <i class=\"material-icons black-text right icon-collapse\" (click)=\"onClickSideNav()\">menu</i>\n\t\t\n  </div>\n</nav>\n\n<collapsible-list [type]=\"'accordion'\">\n\n\t<collapsible-list-item>\n\t\t<collapsible-header class=\"waves-effect\">\n\t\t\t<div #menuCollapse></div>\n\t\t</collapsible-header>\n\t\t<collapsible-body [expanded]=\"false\">\n\t\t\t<p><a (click)=\"onClickSideNav()\" routerLink=\"\">Home</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" routerLink=\"sobre-nos\">Sobre nós</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" [routerLink]=\"['localizacao']\">Localização</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" href=\"/blog\">Blog</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" href=\"/gallery\">Galeria</a></p>\n\t\t</collapsible-body>\n\t</collapsible-list-item>\n\n</collapsible-list>\n\n<router-outlet></router-outlet>\n\n<footer class=\"page-footer grey darken-3\">\n\t\n\t<app-contato></app-contato>\n\n  <div class=\"amber footer-links\">\n    <div class=\"container grey-text text-darken-3\" style=\"padding: 0 15px;\">\n      <div class=\"row\">\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\n          <a href=\"https://api.whatsapp.com/send?l=pt&phone=5512988001234\" target=\"_blank\"><img src=\"assets/img/whatsapp.png\" style=\"width: 100%\"></a>\n        </div>\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\n          <a href=\"https://www.facebook.com/studiofitnesso2/\" target=\"_blank\"><img src=\"assets/img/facebook.png\" style=\"width: 100%\"></a>\n        </div>\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\n          <a href=\"https://www.instagram.com/studiofitnesso2/\" target=\"_blank\"><img src=\"assets/img/instagram.png\" style=\"width: 100%\"></a>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col s12 m6 l4\">\n          <h5>Services</h5>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 1</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 2</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 3</a></p>\n        </div>\n        <div class=\"col s12 m6 l4\">\n          <h5>Info</h5>\n          <p><a href=\"https://www.portalenaf.com.br\" target=\"_blank\" class=\"grey-text text-darken-4\">PortalEnaf</a></p>\n          <p><a href=\"http://www.educacaofisica.com.br\" target=\"_blank\" class=\"grey-text text-darken-4\">EducacaoFisica</a></p>\n          <p><a href=\"https://www.crefsp.gov.br\" target=\"_blank\" class=\"grey-text text-darken-4\">CREFSP</a></p>\n        </div>\n        <div class=\"col s12 m6 l4\">\n          <h5>Studio Fitness</h5>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 1</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 2</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 3</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n</footer>\n"
+module.exports = "<nav class=\"white\" role=\"navigation\" id=\"navbar\">\n  <div class=\"nav-wrapper container\">\n    <a routerLink=\"\" class=\"brand-logo black-text\"><img src=\"assets/img/logotipo-fitness-o2-header.jpg\" alt=\"Logotipo Fitness O2\" style=\"margin-top: 3px;\"></a>\n    <ul class=\"right hide-on-med-and-down\">\n      <li><a routerLink=\"\" class=\"black-text\">Home</a></li>\n      <li><a routerLink=\"sobre-nos\" class=\"black-text\">Sobre nós</a></li>\n\t\t\t<li><a routerLink=\"entre-em-contato\" class=\"black-text\">Entre em contato</a></li>\n\t\t\t<li><a href=\"/blog\" class=\"black-text\">Blog</a></li>\n\t\t\t<li><a href=\"/gallery\" class=\"black-text\">Galeria</a></li>\n    </ul>\n\t\t\n    <i class=\"material-icons black-text right icon-collapse hide-on-large-only\" (click)=\"onClickSideNav()\">menu</i>\n\t\t\n  </div>\n</nav>\n\n<collapsible-list [type]=\"'accordion'\">\n\n\t<collapsible-list-item>\n\t\t<collapsible-header class=\"waves-effect\">\n\t\t\t<div #menuCollapse></div>\n\t\t</collapsible-header>\n\t\t<collapsible-body [expanded]=\"false\">\n\t\t\t<p><a (click)=\"onClickSideNav()\" routerLink=\"\">Home</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" routerLink=\"sobre-nos\">Sobre nós</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" routerLink=\"entre-em-contato\">Entre em contato</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" href=\"/blog\">Blog</a></p>\n\t\t\t<p><a (click)=\"onClickSideNav()\" href=\"/gallery\">Galeria</a></p>\n\t\t</collapsible-body>\n\t</collapsible-list-item>\n\n</collapsible-list>\n\n<router-outlet></router-outlet>\n\n<footer class=\"page-footer grey darken-3\">\n\t\n\t<app-contato></app-contato>\n\n  <div class=\"amber footer-links\">\n    <div class=\"container grey-text text-darken-3\" style=\"padding: 0 15px;\">\n      <div class=\"row\">\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\n          <a href=\"https://api.whatsapp.com/send?l=pt&phone=5512988001234\" target=\"_blank\"><img src=\"assets/img/whatsapp.png\" style=\"width: 100%\"></a>\n        </div>\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\n          <a href=\"https://www.facebook.com/studiofitnesso2/\" target=\"_blank\"><img src=\"assets/img/facebook.png\" style=\"width: 100%\"></a>\n        </div>\n        <div class=\"col s3 push-s1 m2 push-m3 l1 push-l5\">\n          <a href=\"https://www.instagram.com/studiofitnesso2/\" target=\"_blank\"><img src=\"assets/img/instagram.png\" style=\"width: 100%\"></a>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col s12 m6 l4\">\n          <h5>Services</h5>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 1</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 2</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 3</a></p>\n        </div>\n        <div class=\"col s12 m6 l4\">\n          <h5>Info</h5>\n          <p><a href=\"https://www.portalenaf.com.br\" target=\"_blank\" class=\"grey-text text-darken-4\">PortalEnaf</a></p>\n          <p><a href=\"http://www.educacaofisica.com.br\" target=\"_blank\" class=\"grey-text text-darken-4\">EducacaoFisica</a></p>\n          <p><a href=\"https://www.crefsp.gov.br\" target=\"_blank\" class=\"grey-text text-darken-4\">CREFSP</a></p>\n        </div>\n        <div class=\"col s12 m6 l4\">\n          <h5>Studio Fitness</h5>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 1</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 2</a></p>\n          <p><a href=\"#\" class=\"grey-text text-darken-4\">Link 3</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n</footer>\n"
 
 /***/ }),
 
@@ -96,12 +96,13 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__contato_contact_service__ = __webpack_require__("../../../../../src/app/contato/contact.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__contato_contato_component__ = __webpack_require__("../../../../../src/app/contato/contato.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__localizacao_localizacao_component__ = __webpack_require__("../../../../../src/app/localizacao/localizacao.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_materialize__ = __webpack_require__("../../../../angular2-materialize/dist/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__sobre_nos_sobre_nos_component__ = __webpack_require__("../../../../../src/app/sobre-nos/sobre-nos.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__entre_em_contato_entre_em_contato_component__ = __webpack_require__("../../../../../src/app/entre-em-contato/entre-em-contato.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__localizacao_localizacao_component__ = __webpack_require__("../../../../../src/app/localizacao/localizacao.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_angular2_materialize__ = __webpack_require__("../../../../angular2-materialize/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__sobre_nos_sobre_nos_component__ = __webpack_require__("../../../../../src/app/sobre-nos/sobre-nos.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -109,6 +110,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -133,10 +135,11 @@ AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* NgModule */])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__localizacao_localizacao_component__["a" /* LocalizacaoComponent */],
             __WEBPACK_IMPORTED_MODULE_8__contato_contato_component__["a" /* ContatoComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__sobre_nos_sobre_nos_component__["a" /* SobreNosComponent */]
+            __WEBPACK_IMPORTED_MODULE_9__entre_em_contato_entre_em_contato_component__["a" /* EntreEmContatoComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__localizacao_localizacao_component__["a" /* LocalizacaoComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__sobre_nos_sobre_nos_component__["a" /* SobreNosComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_5__agm_core__["a" /* AgmCoreModule */].forRoot({
@@ -146,10 +149,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_4_angular2_collapsible__["a" /* CollapsibleModule */],
             __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_10__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_12_angular2_materialize__["a" /* MaterializeModule */],
+            __WEBPACK_IMPORTED_MODULE_11__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_13_angular2_materialize__["a" /* MaterializeModule */],
             __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* ReactiveFormsModule */],
-            __WEBPACK_IMPORTED_MODULE_13__app_routing__["a" /* routing */]
+            __WEBPACK_IMPORTED_MODULE_14__app_routing__["a" /* routing */]
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_7__contato_contact_service__["a" /* ContactService */]
@@ -167,21 +170,24 @@ AppModule = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sobre_nos_sobre_nos_component__ = __webpack_require__("../../../../../src/app/sobre-nos/sobre-nos.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__localizacao_localizacao_component__ = __webpack_require__("../../../../../src/app/localizacao/localizacao.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contato_contato_component__ = __webpack_require__("../../../../../src/app/contato/contato.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contato_contato_component__ = __webpack_require__("../../../../../src/app/contato/contato.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__entre_em_contato_entre_em_contato_component__ = __webpack_require__("../../../../../src/app/entre-em-contato/entre-em-contato.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__localizacao_localizacao_component__ = __webpack_require__("../../../../../src/app/localizacao/localizacao.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sobre_nos_sobre_nos_component__ = __webpack_require__("../../../../../src/app/sobre-nos/sobre-nos.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
 
 
 
 
+
 var APP_ROUTES = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_1__home_home_component__["a" /* HomeComponent */] },
-    { path: 'sobre-nos', component: __WEBPACK_IMPORTED_MODULE_2__sobre_nos_sobre_nos_component__["a" /* SobreNosComponent */] },
-    { path: 'localizacao', component: __WEBPACK_IMPORTED_MODULE_3__localizacao_localizacao_component__["a" /* LocalizacaoComponent */] },
-    { path: 'contato', component: __WEBPACK_IMPORTED_MODULE_4__contato_contato_component__["a" /* ContatoComponent */] }
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */] },
+    { path: 'sobre-nos', component: __WEBPACK_IMPORTED_MODULE_5__sobre_nos_sobre_nos_component__["a" /* SobreNosComponent */] },
+    { path: 'localizacao', component: __WEBPACK_IMPORTED_MODULE_4__localizacao_localizacao_component__["a" /* LocalizacaoComponent */] },
+    { path: 'contato', component: __WEBPACK_IMPORTED_MODULE_1__contato_contato_component__["a" /* ContatoComponent */] },
+    { path: 'entre-em-contato', component: __WEBPACK_IMPORTED_MODULE_2__entre_em_contato_entre_em_contato_component__["a" /* EntreEmContatoComponent */] }
 ];
 var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(APP_ROUTES);
 //# sourceMappingURL=app.routing.js.map
@@ -216,8 +222,10 @@ var ContactService = (function () {
     function ContactService(http) {
         this.http = http;
     }
-    ContactService.prototype.saveContact = function (name, email, phone, message) {
-        var body = JSON.stringify({ name: name, email: email, phone: phone, message: message });
+    ContactService.prototype.saveContact = function (name, email, phone, message, heard, reply) {
+        if (heard === void 0) { heard = null; }
+        if (reply === void 0) { reply = null; }
+        var body = JSON.stringify({ name: name, email: email, phone: phone, message: message, heard: heard, reply: reply });
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/json' });
         return this.http.post("/contato", body, { headers: headers })
             .map(function (response) { return response.json(); })
@@ -325,6 +333,118 @@ ContatoComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=contato.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/entre-em-contato/entre-em-contato.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "agm-map {\n\theight: 400px;\n\twidth: 100%;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/entre-em-contato/entre-em-contato.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n\t<div class=\"contact-u\">\n\t\t<h4>Entre em contato</h4>\n\t</div>\n\t<div class=\"row\">\n\t\t<form class=\"col s12\" [formGroup]=\"myForm\" (ngSubmit)=\"onSubmit()\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"input-field col s12\">\n\t\t\t\t\t<input id=\"first_name\" type=\"text\" class=\"validate\" formControlName=\"name\">\n\t\t\t\t\t<label for=\"first_name\" class=\"active\">Nome</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"input-field col s12\">\n\t\t\t\t\t<input id=\"email\" type=\"email\" class=\"validate\" formControlName=\"email\">\n\t\t\t\t\t<label for=\"email\" class=\"active\">Email</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"input-field col s12\">\n\t\t\t\t\t<input id=\"phone\" type=\"text\" class=\"validate\" formControlName=\"phone\">\n\t\t\t\t\t<label for=\"phone\" class=\"active\">Telefone</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"input-field col s12\">\n\t\t\t\t\t<select formControlName=\"heard\" materialize=\"material_select\" [(ngModel)]=\"selectedHeard\" [materializeSelectOptions]=\"heard\">\n\t\t\t\t\t\t<option value=\"\" disabled selected>Selecione uma opção...</option>\n\t\t\t\t\t\t<option *ngFor=\"let option of heardOptions\" [value]=\"option.value\">{{option.value}}</option>\n\t\t\t\t\t</select>\n\t\t\t\t\t<label>Como você nos conheceu?</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"input-field col s12\">\n\t\t\t\t\t<select formControlName=\"reply\" materialize=\"material_select\" [(ngModel)]=\"selectedReply\" [materializeSelectOptions]=\"reply\">\n\t\t\t\t\t\t<option value=\"\" disabled selected>Selecione uma opção...</option>\n\t\t\t\t\t\t<option *ngFor=\"let option of replyOptions\" [value]=\"option.value\">{{option.value}}</option>\n\t\t\t\t\t</select>\n\t\t\t\t\t<label>Como você prefere que entremos em contato?</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<div class=\"input-field col s12\">\n\t\t\t\t\t\t<textarea id=\"message\" class=\"materialize-textarea\" formControlName=\"message\"></textarea>\n\t\t\t\t\t\t<label for=\"message\" class=\"active\">Mensagem</label>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"center\">\n\t\t\t\t<button class=\"btn amber waves-effect waves-light\" type=\"submit\" name=\"action\">Enviar\n            <i class=\"material-icons right\">send</i>\n          </button>\n\t\t\t</div>\n\n\t\t</form>\n\t</div>\n\n\t<div class=\"card\">\n\t\t<div class=\"card-content\">\n\t\t\t<span class=\"card-title\">\n\t\t\t\t<i class=\"material-icons amber-text\">access_time</i> Horário de funcionamento\n\t\t\t</span>\n\t\t\t<p><strong>Segunda a Sexta:</strong> 6 às 22h</p>\n\t\t\t<p style=\"margin-bottom: 20px;\"><strong>Sábado:</strong> 8 às 12h</p>\n\n\t\t\t<span class=\"card-title\">\n\t\t\t\t<i class=\"material-icons amber-text\">local_phone</i> Telefone\n\t\t\t</span>\n\t\t\t<p>(12) 98800-1234</p>\n\t\t</div>\n\t</div>\n\n\t<div class=\"card\">\n\t\t<div class=\"card-content\">\n\t\t\t<span class=\"card-title\">\n\t\t\t\t<i class=\"material-icons amber-text\">location_on</i> Endereço\n\t\t\t</span>\n\t\t\t<p style=\"margin-bottom: 20px;\">Avenida Andrômeda, 753 - Sala 1</p>\n\n\t\t\t<!-- this creates a google map on the page with the given lat/lng from -->\n\t\t\t<!-- the component as the initial center of the map: -->\n\t\t\t<agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoom\">\n\t\t\t\t<agm-marker [latitude]=\"lat\" [longitude]=\"lng\">\n\t\t\t\t\t<agm-info-window>Studio Fitness O2</agm-info-window>\n\t\t\t\t</agm-marker>\n\t\t\t</agm-map>\n\t\t\t\n\t\t</div>\n\t</div>\n\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/entre-em-contato/entre-em-contato.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_materialize__ = __webpack_require__("../../../../angular2-materialize/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contato_contact_service__ = __webpack_require__("../../../../../src/app/contato/contact.service.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EntreEmContatoComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var EntreEmContatoComponent = (function () {
+    function EntreEmContatoComponent(contactService) {
+        this.contactService = contactService;
+        this.heardOptions = [
+            { value: 'Facebook' },
+            { value: 'Instagram' },
+            { value: 'Indicação' },
+            { value: 'Internet' }
+        ];
+        this.replyOptions = [
+            { value: 'Telefone' },
+            { value: 'Email' },
+            { value: 'WhatsApp' }
+        ];
+        this.lat = -23.222508;
+        this.lng = -45.888061;
+        this.zoom = 18;
+    }
+    EntreEmContatoComponent.prototype.ngOnInit = function () {
+        this.myForm = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormGroup */]({
+            name: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormControl */](null, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* Validators */].required),
+            email: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormControl */](null, [
+                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* Validators */].pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
+            ]),
+            phone: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormControl */](),
+            heard: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormControl */](),
+            reply: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormControl */](),
+            message: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormControl */](null, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* Validators */].required)
+        });
+    };
+    EntreEmContatoComponent.prototype.onSubmit = function () {
+        var _this = this;
+        if ((this.myForm.value.email == null || this.myForm.value.email.trim() == "") && (this.myForm.value.phone == null || this.myForm.value.phone.trim() == "")) {
+            __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_angular2_materialize__["b" /* toast */])('Por gentileza preencha o campo e-mail ou telefone', 5000);
+        }
+        else {
+            this.myForm.disable;
+            this.contactService.saveContact(this.myForm.value.name, this.myForm.value.email, this.myForm.value.phone, this.myForm.value.message, this.myForm.value.heard, this.myForm.value.reply)
+                .subscribe(function (data) {
+                console.log("Success!");
+                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_angular2_materialize__["b" /* toast */])('Sua mensagem foi enviada com sucesso! Obrigado por nos contactar, retornaremos em breve.', 5000);
+                console.log("Toasted!");
+                _this.myForm.reset();
+                console.log("Reseted!");
+            }, function (error) {
+                console.log(error);
+            });
+        }
+    };
+    return EntreEmContatoComponent;
+}());
+EntreEmContatoComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'app-entre-em-contato',
+        template: __webpack_require__("../../../../../src/app/entre-em-contato/entre-em-contato.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/entre-em-contato/entre-em-contato.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__contato_contact_service__["a" /* ContactService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__contato_contact_service__["a" /* ContactService */]) === "function" && _a || Object])
+], EntreEmContatoComponent);
+
+var _a;
+//# sourceMappingURL=entre-em-contato.component.js.map
 
 /***/ }),
 
@@ -483,7 +603,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/sobre-nos/sobre-nos.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h3>Sobre nós</h3>\r\n</div>\r\n\r\n<div class=\"row no-margin fs-16\">\r\n    <div class=\"col s12 l6 grey darken-3\" style=\"padding: 20px;\">\r\n        <p class=\"amber-text\">Fundado em 2014, um novo modelo de negócio e de conceito de treinamento. Um ambiente moderno, completo, que visa a promoção da qualidade de vida a partir de treinos que prezam por eficiência e segurança, sem nunca perder o foco em resultados.</p>\r\n    </div>\r\n    <div class=\"col s12 l6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-1.jpg); background-size: cover; height: 350px;\"></div>\r\n</div>\r\n<div class=\"row no-margin fs-16\">\r\n    <div class=\"col s12 l6 amber\" style=\"padding: 20px;\">\r\n        <p class=\"white-text\">Nossos clientes são homens e mulheres que, independente da idade, desejam um estilo de vida, não para impressionar outros, mas em primeiro lugar, querem o bem estar, viver sem dores, com disposição para aproveitar a vida na companhia de quem ama.</p>\r\n    </div>\r\n    <div class=\"col s12 l6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-2.jpg); background-size: cover; height: 350px;\"></div>\r\n</div>\r\n<div class=\"row no-margin fs-16\">\r\n    <div class=\"col s12 l6 grey darken-3\" style=\"padding: 20px;\">\r\n        <p class=\"amber-text\">Nossos treinos são personalizados, respeitando a individualidade do aluno e prezando pela otimização do tempo x eficiência, sempre indo além do objetivo do aluno, que normalmente envolve apenas a perda de gordura e definição muscular. Nossa meta é torná-lo apto para todas as atividades do dia a dia.</p>\r\n    </div>\r\n    <div class=\"col s12 l6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-3.jpg); background-size: cover; height: 350px;\"></div>\r\n</div>\r\n\r\n<div \r\n    #carousel\r\n    class=\"carousel carousel-slider\" \r\n    [ngClass]=\"{ 'initialized': showInitialized }\" \r\n    materialize=\"carousel\" \r\n    [materializeParams]=\"[{fullWidth: true, indicators: true}]\" \r\n    [materializeActions]=\"actions\">\r\n\r\n    <div class=\"carousel-item white-text\" href=\"#one!\">\r\n        <img src=\"assets/img/sobre-nos-4.jpg\">\r\n    </div>\r\n    <div class=\"carousel-item white-text\" href=\"#one!\">\r\n        <img src=\"assets/img/sobre-nos-5.jpg\">\r\n    </div>\r\n    <div class=\"carousel-item white-text\" href=\"#one!\">\r\n        <img src=\"assets/img/sobre-nos-6.jpg\">\r\n    </div>\r\n    <div class=\"carousel-item white-text\" href=\"#one!\">\r\n        <img src=\"assets/img/sobre-nos-7.jpg\">\r\n    </div>\r\n    <div class=\"carousel-item white-text\" href=\"#one!\">\r\n        <img src=\"assets/img/sobre-nos-8.jpg\">\r\n    </div>\r\n    <div class=\"carousel-item white-text\" href=\"#one!\">\r\n        <img src=\"assets/img/sobre-nos-9.jpg\">\r\n    </div>\r\n    <div class=\"carousel-item white-text\" href=\"#one!\">\r\n        <img src=\"assets/img/sobre-nos-10.jpg\">\r\n    </div>\r\n    <div class=\"carousel-item white-text\" href=\"#one!\">\r\n        <img src=\"assets/img/sobre-nos-11.jpg\">\r\n    </div>\r\n    <div class=\"carousel-item white-text\" href=\"#one!\">\r\n        <img src=\"assets/img/sobre-nos-12.jpg\">\r\n    </div>\r\n    <div class=\"carousel-item white-text\" href=\"#one!\">\r\n        <img src=\"assets/img/sobre-nos-13.jpg\">\r\n    </div>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\n    <h3 class=\"center\">Sobre nós</h3>\n</div>\n\n<div class=\"row no-margin fs-16\">\n    <div class=\"col s12 l6\" style=\"padding: 20px;\">\n        <p class=\"center\">Fundado em 2014, um novo modelo de negócio e de conceito de treinamento. Um ambiente moderno, completo, que visa a promoção da qualidade de vida a partir de treinos que prezam por eficiência e segurança, sem nunca perder o foco em resultados.</p>\n    </div>\n    <div class=\"col s12 l6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-1.jpg); background-size: cover; height: 350px;\"></div>\n</div>\n<div class=\"row no-margin fs-16\">\n    <div class=\"col s12 l6\" style=\"padding: 20px;\">\n        <p class=\"center\">Nossos clientes são homens e mulheres que, independente da idade, desejam um estilo de vida, não para impressionar outros, mas em primeiro lugar, querem o bem estar, viver sem dores, com disposição para aproveitar a vida na companhia de quem ama.</p>\n    </div>\n    <div class=\"col s12 l6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-2.jpg); background-size: cover; height: 350px;\"></div>\n</div>\n<div class=\"row no-margin fs-16\">\n    <div class=\"col s12 l6\" style=\"padding: 20px;\">\n        <p class=\"center\">Nossos treinos são personalizados, respeitando a individualidade do aluno e prezando pela otimização do tempo x eficiência, sempre indo além do objetivo do aluno, que normalmente envolve apenas a perda de gordura e definição muscular. Nossa meta é torná-lo apto para todas as atividades do dia a dia.</p>\n    </div>\n    <div class=\"col s12 l6 img-bg-cover\" style=\"background: url(assets/img/sobre-nos-3.jpg); background-size: cover; height: 350px;\"></div>\n</div>\n\n<div \n    #carousel\n    class=\"carousel carousel-slider\" \n    [ngClass]=\"{ 'initialized': showInitialized }\" \n    materialize=\"carousel\" \n    [materializeParams]=\"[{fullWidth: true, indicators: true}]\" \n    [materializeActions]=\"actions\">\n\n    <div class=\"carousel-item white-text\" href=\"#one!\">\n        <img src=\"assets/img/sobre-nos-4.jpg\">\n    </div>\n    <div class=\"carousel-item white-text\" href=\"#one!\">\n        <img src=\"assets/img/sobre-nos-5.jpg\">\n    </div>\n    <div class=\"carousel-item white-text\" href=\"#one!\">\n        <img src=\"assets/img/sobre-nos-6.jpg\">\n    </div>\n    <div class=\"carousel-item white-text\" href=\"#one!\">\n        <img src=\"assets/img/sobre-nos-7.jpg\">\n    </div>\n    <div class=\"carousel-item white-text\" href=\"#one!\">\n        <img src=\"assets/img/sobre-nos-8.jpg\">\n    </div>\n    <div class=\"carousel-item white-text\" href=\"#one!\">\n        <img src=\"assets/img/sobre-nos-9.jpg\">\n    </div>\n    <div class=\"carousel-item white-text\" href=\"#one!\">\n        <img src=\"assets/img/sobre-nos-10.jpg\">\n    </div>\n    <div class=\"carousel-item white-text\" href=\"#one!\">\n        <img src=\"assets/img/sobre-nos-11.jpg\">\n    </div>\n    <div class=\"carousel-item white-text\" href=\"#one!\">\n        <img src=\"assets/img/sobre-nos-12.jpg\">\n    </div>\n    <div class=\"carousel-item white-text\" href=\"#one!\">\n        <img src=\"assets/img/sobre-nos-13.jpg\">\n    </div>\n</div>\n\n<!--   Icon Section   -->\n<div class=\"row block-1\">\n\t<div class=\"col s12 amber center-align\">\n\t\t<div class=\"icon-block\" style=\"padding-bottom: 30px;\">\n\t\t\t<h3 class=\"white-text center-align\" style=\"margin-bottom: 20px\">Enjoy <br>a free trial</h3>\n\t\t\t<a class=\"btn white amber-text\" href=\"#\">FREE 7 DAYS TRIAL</a>\n\t\t</div>\n\t</div>\n</div>\n"
 
 /***/ }),
 

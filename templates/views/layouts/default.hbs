@@ -11,6 +11,7 @@
 		<meta name="description" content="Studio Fitness O2">
 		<title>Studio Fitness O2</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 		<link href="/styles/site.css" rel="stylesheet"> {{!-- This file provides the default styling for the KeystoneJS Content Editor - only renders when user is logged in and
 		admin--}} {{{isAdminEditorCSS user}}} {{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries //-
 		Safely remove this block if you are not targeting IE8 --}}
@@ -32,8 +33,33 @@
 			.amber {
     		background-color: #ffc107 !important;
 			}
+			.amber-text {
+				color: #ffc107 !important;
+			}
 			.grey-text.text-darken-3 {
     		color: #424242 !important;
+			}
+			.grey.darken-3 {
+				background-color: #424242 !important;
+			}
+			.grey-text.text-lighten-2 {
+				color: #e0e0e0 !important;
+			}
+			.center, .center-align {
+				text-align: center;
+			}
+			.contact-us h4 {
+				font-size: 48px;
+				line-height: 1em;
+				font-family: "Poppins";
+				font-weight: 700;
+				text-transform: uppercase;
+				margin: 1.14rem 0 0.912rem 0;
+			}
+			.page-footer {
+				padding-top: 20px;
+				color: #fff;
+				background-color: #ee6e73;
 			}
 			.footer-links h5 {
 				font-size: 24px;
@@ -45,6 +71,89 @@
 			}
 			.footer-links a {
 				color: black;
+			}
+			footer form .row {
+				margin-bottom: 20px;
+			}
+			
+			footer input, footer textarea {
+				line-height: normal;
+				text-rendering: auto;
+				color: initial;
+				letter-spacing: normal;
+				word-spacing: normal;
+				text-transform: none;
+				text-indent: 0px;
+				text-shadow: none;
+				display: inline-block;
+				text-align: start;
+				-webkit-appearance: textfield;
+				background-color: white;
+				-webkit-rtl-ordering: logical;
+				user-select: text;
+				cursor: auto;
+				padding: 5px 1px 1px;
+				border-width: 2px;
+				border-style: inset;
+				border-color: initial;
+				border-image: initial;
+				-webkit-writing-mode: horizontal-tb;
+			}
+			footer input:not(.browser-default), footer textarea:not(.browser-default) {
+				background-color: transparent;
+				border: none;
+				border-bottom: 1px solid #9e9e9e;
+				border-radius: 0;
+				outline: none;
+				height: 3rem;
+				width: 100%;
+				margin: 0 0 20px 0;
+				padding: 5px 0 0;
+				box-shadow: none;
+				box-sizing: content-box;
+				transition: all 0.3s;
+				color: #ffc107;
+			}
+			footer input.valid:not(.browser-default), footer textarea.valid:not(.browser-default) {
+				border-bottom: 1px solid #4CAF50;
+				box-shadow: 0 1px 0 0 #4CAF50;
+			}
+
+			footer label {
+				color: #9e9e9e;
+			}
+			footer .input-field label {
+				color: #9e9e9e;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				font-size: 1.3rem;
+				cursor: text;
+				transition: -webkit-transform .2s ease-out;
+				transition: transform .2s ease-out;
+				transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+				-webkit-transform-origin: 0% 100%;
+				transform-origin: 0% 100%;
+				text-align: initial;
+				-webkit-transform: translateY(12px);
+				transform: translateY(12px);
+				pointer-events: none;
+			}
+			footer .input-field.col label {
+				left: 0.75rem;
+			}
+			footer .input-field label:not(.label-icon).active {
+				-webkit-transform: translateY(-14px) scale(0.8);
+				transform: translateY(-14px) scale(0.8);
+				-webkit-transform-origin: 0 0;
+				transform-origin: 0 0;
+			}
+			footer .input-field label {
+				color: #ffc107;
+			}
+			footer input:not(.browser-default).validate + label {
+				width: 100%;
 			}
 
 			@media (min-width: 767px) 
@@ -124,6 +233,51 @@
 		</div>
 
 		<footer class="page-footer grey darken-3">
+
+			<div class="container">
+				<div class="center contact-us grey-text text-lighten-2">
+					<h4>Entre em <span class="amber-text">contato</span></h4>
+				</div>
+				<div class="row" style="padding-top: 15px;">
+
+					<form class="col-sm-12" action="/contato" method="post" id="form-contact">
+						<div class="row">
+							<div class="input-field col-sm-12">
+								<input id="first_name" type="text" class="validate" name="name">
+								<label for="first_name" class="active">Nome</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col-sm-12">
+								<input id="email" type="email" class="validate" name="email">
+								<label for="email" class="active">Email</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col-sm-12">
+								<input id="phone" type="text" class="validate" name="phone">
+								<label for="phone" class="active">Telefone</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="row">
+								<div class="input-field col-sm-12">
+									<textarea id="message" class="materialize-textarea" name="message"></textarea>
+									<label for="message" class="active">Mensagem</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="center" style="margin-bottom: 20px;">
+							<button class="btn amber waves-effect waves-light" id="btn-send-contact" type="submit" name="action">ENVIAR
+							</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
 			<div class="amber footer-links">
 				<div class="container grey-text text-darken-3" style="padding: 0 15px;">
 					<div class="row">
@@ -167,6 +321,35 @@
 		{{!-- //- Customise which Bootstrap javascript files are served by including //- them specifically here, instead of bootstrap-3.3.5.min.js
 		--}}
 		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
+
+		<script>
+			$(document).ready(function() {
+
+				$('#btn-send-contact').on('click', function(event){
+					event.preventDefault();
+					event.stopPropagation();
+
+					$formContact = $('#form-contact');
+
+					$.ajax({
+							type: "POST",
+							url: $formContact.attr('action'),
+							data: $formContact.serialize(),
+							dataType: "json",
+							success: function (resp, textStatus, jqXHR) {
+								$formContact.parent().html('<p class="center" style="color: #ffc107; margin-bottom: 20px">Mensagem enviada com sucesso! Aguarde nosso retorno.</p>');
+							},
+							error: function (jqXHR, textStatus, errorThrown) {
+								console.log(errorThrown);
+							}
+						});
+
+					
+				});
+
+			});
+		</script>
+
 		{{{isAdminEditorJS user}}}
 	</body>
 

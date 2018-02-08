@@ -1,0 +1,97 @@
+<div class="container">
+	<div class="contact-u">
+		<h4>Entre em contato</h4>
+	</div>
+	<div class="row">
+		<form class="col s12" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="first_name" type="text" class="validate" formControlName="name">
+					<label for="first_name" class="active">Nome</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="email" type="email" class="validate" formControlName="email">
+					<label for="email" class="active">Email</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="phone" type="text" class="validate" formControlName="phone">
+					<label for="phone" class="active">Telefone</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<select formControlName="heard" materialize="material_select" [(ngModel)]="selectedHeard" [materializeSelectOptions]="heard">
+						<option value="" disabled selected>Selecione uma opção...</option>
+						<option *ngFor="let option of heardOptions" [value]="option.value">{{option.value}}</option>
+					</select>
+					<label>Como você nos conheceu?</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<select formControlName="reply" materialize="material_select" [(ngModel)]="selectedReply" [materializeSelectOptions]="reply">
+						<option value="" disabled selected>Selecione uma opção...</option>
+						<option *ngFor="let option of replyOptions" [value]="option.value">{{option.value}}</option>
+					</select>
+					<label>Como você prefere que entremos em contato?</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="row">
+					<div class="input-field col s12">
+						<textarea id="message" class="materialize-textarea" formControlName="message"></textarea>
+						<label for="message" class="active">Mensagem</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="center">
+				<button class="btn amber waves-effect waves-light" type="submit" name="action">Enviar
+            <i class="material-icons right">send</i>
+          </button>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="card">
+		<div class="card-content">
+			<span class="card-title">
+				<i class="material-icons amber-text">access_time</i> Horário de funcionamento
+			</span>
+			<p><strong>Segunda a Sexta:</strong> 6 às 22h</p>
+			<p style="margin-bottom: 20px;"><strong>Sábado:</strong> 8 às 12h</p>
+
+			<span class="card-title">
+				<i class="material-icons amber-text">local_phone</i> Telefone
+			</span>
+			<p>(12) 98800-1234</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-content">
+			<span class="card-title">
+				<i class="material-icons amber-text">location_on</i> Endereço
+			</span>
+			<p style="margin-bottom: 20px;">Avenida Andrômeda, 753 - Sala 1</p>
+
+			<!-- this creates a google map on the page with the given lat/lng from -->
+			<!-- the component as the initial center of the map: -->
+			<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+				<agm-marker [latitude]="lat" [longitude]="lng">
+					<agm-info-window>Studio Fitness O2</agm-info-window>
+				</agm-marker>
+			</agm-map>
+			
+		</div>
+	</div>
+
+</div>

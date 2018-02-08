@@ -4,12 +4,12 @@
     <ul class="right hide-on-med-and-down">
       <li><a routerLink="" class="black-text">Home</a></li>
       <li><a routerLink="sobre-nos" class="black-text">Sobre nós</a></li>
-			<li><a [routerLink]="['localizacao']" class="black-text">Localização</a></li>
+			<li><a routerLink="entre-em-contato" class="black-text">Entre em contato</a></li>
 			<li><a href="/blog" class="black-text">Blog</a></li>
 			<li><a href="/gallery" class="black-text">Galeria</a></li>
     </ul>
 		
-    <i class="material-icons black-text right icon-collapse" (click)="onClickSideNav()">menu</i>
+    <i class="material-icons black-text right icon-collapse hide-on-large-only" (click)="onClickSideNav()">menu</i>
 		
   </div>
 </nav>
@@ -23,7 +23,7 @@
 		<collapsible-body [expanded]="false">
 			<p><a (click)="onClickSideNav()" routerLink="">Home</a></p>
 			<p><a (click)="onClickSideNav()" routerLink="sobre-nos">Sobre nós</a></p>
-			<p><a (click)="onClickSideNav()" [routerLink]="['localizacao']">Localização</a></p>
+			<p><a (click)="onClickSideNav()" routerLink="entre-em-contato">Entre em contato</a></p>
 			<p><a (click)="onClickSideNav()" href="/blog">Blog</a></p>
 			<p><a (click)="onClickSideNav()" href="/gallery">Galeria</a></p>
 		</collapsible-body>

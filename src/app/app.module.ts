@@ -9,6 +9,7 @@ import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 import { ContactService } from './contato/contact.service';
 import { ContatoComponent } from './contato/contato.component';
+import { EntreEmContatoComponent } from './entre-em-contato/entre-em-contato.component';
 import { HomeComponent } from './home/home.component';
 import { HttpModule } from '@angular/http';
 import { LocalizacaoComponent } from './localizacao/localizacao.component';
@@ -19,9 +20,10 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+		ContatoComponent,
+		EntreEmContatoComponent,
     LocalizacaoComponent,
-    ContatoComponent,
+    HomeComponent,
     SobreNosComponent
   ],
   imports: [

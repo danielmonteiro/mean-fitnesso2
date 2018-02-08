@@ -20,12 +20,28 @@ exports = module.exports = function (req, res) {
 		if (err) {
 			return res.status(500).json({
 				message: 'Não foi possível salvar os dados do formulário de contato',
-				error: err
+				error: err,
 			});
 		}
 
+		var heard = '';
+		if (req.body.heard) {
+			heard = `<p><strong>Como você nos conheceu?</strong> ${req.body.heard}</p>`;
+		}
+
+		var reply = '';
+		if (req.body.reply) {
+			reply = `<p><strong>Como você prefere que entremos em contato?</strong> ${req.body.reply}</p>`;
+		}
+
 		var emailContent = htmlEmailTemplateInit;
-		emailContent += `<p><strong>Nome:</strong> ${req.body.name}</p><p><strong>E-mail:</strong> ${req.body.email}</p><p><strong>Telefone:</strong> ${req.body.phone}</p><p><strong>Mensagem:</strong> ${req.body.message}</p>`;
+		emailContent += `
+			<p><strong>Nome:</strong> ${req.body.name}</p>
+			<p><strong>E-mail:</strong> ${req.body.email}</p>
+			<p><strong>Telefone:</strong> ${req.body.phone}</p>
+			${heard}
+			${reply}
+			<p><strong>Mensagem:</strong> ${req.body.message}</p>`;
 		emailContent += htmlEmailTemplateEnd;
 
 		// Envia email
@@ -33,17 +49,17 @@ exports = module.exports = function (req, res) {
 			to: 'danielpinhomonteiro@gmail.com',
 			from: 'danielpinhomonteiro@gmail.com',
 			subject: 'Studio Fitness O2 - Novo contato recebido',
-			message: emailContent
+			message: emailContent,
 		}, function (err, data, result) {
 			if (err) {
 				return res.status(500).json({
 					message: 'An error occurred on sending email',
-					error: err
+					error: err,
 				});
 			}
 			res.status(200).json({
 				message: 'Os dados do formulário foram salvos com sucesso!',
-				obj: contact
+				obj: contact,
 			});
 		});
 	});
