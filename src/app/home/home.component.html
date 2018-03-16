@@ -7,7 +7,7 @@
 </div>
 
 <!--   Icon Section   -->
-<div class="row block-1" style="display: flex;">
+<div class="row block-1 flex-medium">
 	<!-- CAROUSEL -->
 	<div #carouselSmall1 class="carousel carousel-slider" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
 		[materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions" style="flex: 1;">
@@ -40,8 +40,8 @@
 </div>
 
 <!--   Icon Section   -->
-<div class="row block-1" style="display: flex;">
-	<div class="icon-block grey darken-3" style="flex: 1;">
+<div class="row block-1 flex-medium">
+	<div class="icon-block grey darken-3 hide-on-small-only" style="flex: 1;">
 		<div class="grey-text text-lighten-2 center-align fs28">
 			 Reabilitação funcional e esportiva
 		</div>
@@ -64,6 +64,15 @@
 		</div>
 		<div class="carousel-item white-text" href="#four!">
 			<img src="assets/img/sobre-nos-8.jpg" class="responsive-img">
+		</div>
+	</div>
+
+	<div class="icon-block grey darken-3 hide-on-med-and-up" style="flex: 1;">
+		<div class="grey-text text-lighten-2 center-align fs28">
+			Reabilitação funcional e esportiva
+		</div>
+		<div class="amber-text fs28" style="margin-top: 1rem;">
+			Preparação Esportiva
 		</div>
 	</div>
 </div>
