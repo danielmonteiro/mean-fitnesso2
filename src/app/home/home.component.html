@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row grey darken-3">
 	<div class="col s12 m6 push-m3 l4 push-l4">
 		<div style="padding: 30px 0; text-align: center;">
 			<img src="/assets/img/logo-fitness-o2.png" class="responsive-img">
@@ -26,29 +26,67 @@
 		</div>
 	</div>
 
-	<div class="grey darken-3 icon-block" style="flex: 1;">
-		<div class="grey-text text-lighten-2 center-align fs28">
-			Treinamento Personalizado
-		</div>
-		<div class="amber-text fs28" style="margin: 1rem 0;">
-			Novo conceito em atividade física
-		</div>
-		<div class="grey-text text-lighten-2 center-align fs28">
-			Prevenção de Lesões
+	<div class="icon-block grey darken-3" style="flex: 1;">
+		<div #carouselWords1 class="carousel carousel-slider" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
+		[materializeParams]="[{fullWidth: true, indicators: false}]" [materializeActions]="actions">
+		
+			<div class="carousel-item center-align">
+				<div class="vertical-middle fs28">
+					<span class="amber-text">Reabilitação</span> <span class="grey-text text-lighten-2">funcional e esportiva</span>
+				</div>
+			</div>
+			<div class="carousel-item amber-text" style="margin: 1rem 0;">
+				<div class="vertical-middle fs28">
+					<span class="grey-text text-lighten-2">Preparação</span> <span class="amber-text">Esportiva</span>
+				</div>
+			</div>
+			<div class="carousel-item grey-text text-lighten-2 center-align">
+				<div class="vertical-middle fs28">
+					<span class="amber-text">Prevenção</span> <span class="grey-text text-lighten-2">de Lesão</span>
+				</div>
+			</div>
+			<div class="carousel-item amber-text" style="margin: 1rem 0;">
+				<div class="vertical-middle fs28">
+					<span class="grey-text text-lighten-2">Ganho de</span> <span class="amber-text">Massa Muscular</span>
+				</div>
+			</div>
+
 		</div>
 	</div>
+
 </div>
 
 <!--   Icon Section   -->
 <div class="row block-1 flex-medium">
+
 	<div class="icon-block grey darken-3 hide-on-small-only" style="flex: 1;">
-		<div class="grey-text text-lighten-2 center-align fs28">
-			 Reabilitação funcional e esportiva
-		</div>
-		<div class="amber-text fs28" style="margin-top: 1rem;">
-			Preparação Esportiva
+		<div #carouselWords2 class="carousel carousel-slider" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
+		[materializeParams]="[{fullWidth: true, indicators: false}]" [materializeActions]="actions">
+		
+			<div class="carousel-item center-align">
+				<div class="vertical-middle fs28">
+					<span class="amber-text">Definição</span> <span class="grey-text text-lighten-2">Muscular</span>
+				</div>
+			</div>
+			<div class="carousel-item amber-text" style="margin: 1rem 0;">
+				<div class="vertical-middle fs28">
+					<span class="grey-text text-lighten-2">Perda de</span> <span class="amber-text">Gordura Corporal</span>
+				</div>
+			</div>
+			<div class="carousel-item grey-text text-lighten-2 center-align">
+				<div class="vertical-middle fs28">
+					<span class="amber-text">Correção de desvios</span> <span class="grey-text text-lighten-2">Posturais</span>
+				</div>
+			</div>
+			<div class="carousel-item amber-text" style="margin: 1rem 0;">
+				<div class="vertical-middle fs28">
+					<span class="grey-text text-lighten-2">Qualidade</span> <span class="amber-text">de Vida</span>
+				</div>
+			</div>
+
 		</div>
 	</div>
+
 	<!-- CAROUSEL -->
 	<div #carouselSmall2 class="carousel carousel-slider" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
 		[materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions" style="flex: 1;">
@@ -68,37 +106,53 @@
 	</div>
 
 	<div class="icon-block grey darken-3 hide-on-med-and-up" style="flex: 1;">
-		<div class="grey-text text-lighten-2 center-align fs28">
-			Reabilitação funcional e esportiva
-		</div>
-		<div class="amber-text fs28" style="margin-top: 1rem;">
-			Preparação Esportiva
+		<div #carouselWords2 class="carousel carousel-slider" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
+		[materializeParams]="[{fullWidth: true, indicators: false}]" [materializeActions]="actions">
+		
+			<div class="carousel-item center-align">
+				<div class="vertical-middle fs28">
+					<span class="amber-text">Definição</span> <span class="grey-text text-lighten-2">Muscular</span>
+				</div>
+			</div>
+			<div class="carousel-item amber-text" style="margin: 1rem 0;">
+				<div class="vertical-middle fs28">
+					<span class="grey-text text-lighten-2">Perda de</span> <span class="amber-text">Gordura Corporal</span>
+				</div>
+			</div>
+			<div class="carousel-item grey-text text-lighten-2 center-align">
+				<div class="vertical-middle fs28">
+					<span class="amber-text">Correção de desvios</span> <span class="grey-text text-lighten-2">Posturais</span>
+				</div>
+			</div>
+			<div class="carousel-item amber-text" style="margin: 1rem 0;">
+				<div class="vertical-middle fs28">
+					<span class="grey-text text-lighten-2">Qualidade</span> <span class="amber-text">de Vida</span>
+				</div>
+			</div>
+
 		</div>
 	</div>
+
 </div>
 
 <!-- Resumo quem somos -->
 <div class="abstract-who-we-are">
-	<p>O Studio O2 Fitness apresenta um novo modelo de negócio e de conceito de treinamento. Um ambiente moderno, completo, que
-	visa a promoção da qualidade de vida a partir de treinos que aliam eficiência e segurança, sem perder o foco em resultados.</p>
-	<p>O plano de trabalho acontece em uma relação de parceria onde a busca de resultados passa a ser uma tarefa conjunta. Comemora-se
-	cada pequena vitória da mesma forma que há o apoio e a motivação para superar as dificuldades.</p> 
-	<p>Trabalhamos para ajudar o aluno a apaixonar-se por si mesmo, oferecendo além da atividade física, orientação sobre hábitos alimentares e estilo de
-	vida, para que o treino seja um aliado em uma trajetória de mudança de comportamento em prol de uma vida mais saudável.</p>
+	<h5 class="abstract-about-us-title">TREINAMENTO PERSONALIZADO</h5>
+	<p>O Studio Fitness O2 oferece treinamento adequado para cada indivíduo considerando seu histórico e objetivos. Atendendo iniciantes, idosos, pessoas em reabilitação ou até mesmo atletas, sempre adequando o plano de trabalho à real necessidade do aluno. </p>
+	<h5 class="abstract-about-us-title">TREINO COM FOCO EM QUALIDADE DE VIDA</h5>
+	<p>A filosofia de trabalho oferecido no Studio Fitness O2 engloba a orientação sobre hábitos alimentares e estilo de vida, para que o treino seja um aliado em uma trajetória de mudança de comportamento em prol de uma vida mais saudável. </p> 
+	<h5 class="abstract-about-us-title">NOVO CONCEITO DE TREINAMENTO</h5>
+	<p>O O2 Fitness oferece um ambiente propício para que o aluno sinta-se à vontade para treinar, tirar suas dúvidas e relacionar-se com pessoas que também estão em busca da melhora na qualidade de vida. Através do atendimento personalizado com poucos alunos por horário, do uso dos melhores equipamentos e metodologias, proporciona a quem treina a eficiência e segurança de um bom acompanhamento profissional.</p>
 </div>
 
 <!--   Icon Section   -->
 <div class="row block-1">
 	<div class="col s12 amber center-align">
 		<div class="icon-block center-align" style="padding: 0 20px 30px;">
-			<h3 class="white-text" style="margin-bottom: 20px; text-transform: uppercase;">Treine com a gente</h3>
-			<p>Nossos alunos são homens e mulheres que, independentemente da idade, buscam um estilo de vida mais saudável; querem o bem-estar,
-			viver sem dores, com disposição para aproveitar a vida na companhia da família e entes queridos.</p>
-			<p>Oferecemos treinos personalizados, respeitando a individualidade, o que garante resultados mais eficazes em menos tempo,
-			sempre indo além do objetivo do aluno, que normalmente envolve apenas a diminuição do peso e a definição muscular. Nossa
-			meta é torná-lo apto para todas as atividades do dia a dia.</p>
-			<p>Que tal conhecer nosso trabalho?</p>
-			<a class="btn white amber-text" href="#">Inscreva-se para uma aula experimental)</a>
+			<h3 class="invite-interested-title">Treine <br>com a gente</h3>
+			<p>Nossos alunos são homens e mulheres que, independentemente da idade, buscam um estilo de vida mais saudável; querem o bem-estar, viver sem dores e disposição para aproveitar a vida.</p>
+			<p>Oferecemos treinos personalizados, o que garante resultados mais eficazes em menos tempo, sempre indo além do objetivo do aluno. Venha conhecer nosso trabalho!</p>
+			<a class="btn white amber-text invite-interested-button" href="#">Treine grátis</a>
 		</div>
 	</div>
 	<div class="col s12 m6 img-bg-cover" style="background: url(assets/img/sobre-nos-10.jpg); background-size: cover;"></div>
@@ -113,78 +167,162 @@
     <div class="col s12 m6 pull-m6">
       <div class="icon-block" style="padding: 30px 0;">
 				<h3 class="black-text center-align">Jonathas Guedes</h3>
-				<p>Na liderança do Studio O2 Fitness está Jonathas Guedes. Jovem, formado em educação física e com garra para empreender, trouxe
-				ao Vale do Paraíba um novo conceito de treinamento físico.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Group Classes -->
-  <div class="row">
-    <div class="col s12 m6 img-bg-cover" style="background: url(assets/img/sobre-nos-8.jpg); background-size: cover;"></div>
-    <div class="col s12 m6">
-      <div class="icon-block" style="padding: 100px 0;">
-        <p>Especializado em reabilitação esportiva, xxxxxxxxxxxxxxxxxxx, e xxxxxxxxxxxxxxxxx, Jonathas consegue oferecer um plano de
-				trabalho completo, onde os objetivos são atingidos de forma mais assertiva, com segurança e ainda mais saúde.</p>
+				<p>Na liderança do Studio Fitness O2 está Jonathas Guedes. Jovem, formado em educação física e com garra para empreender, trouxe
+				a São José dos Campos um novo conceito de treinamento físico. Especializado em reabilitação esportiva, correção postural,
+				e emagrecimento, Jonathas consegue oferecer um plano de trabalho completo, onde os objetivos são atingidos de forma mais
+				assertiva, com segurança e ainda mais saúde.</p>
       </div>
     </div>
   </div>
 
 </div>
 
-<div class="depoimentos">
-	<h3>Depoimentos</h3>
-	<p>
-		<img src="/images/depoimento-cecilia.jpg" >
-	</p>
-	<p><strong>Cecília</strong></p>
-	<p>Cheguei ao Studio vindo de uma fratura no tornozelo direito e rompimento de ligamento no tornozelo esquerdo, depois de vários
-	meses de fisioterapia e depois academia mas os pés ainda não estavam bom. Por recomendação de uma amiga fui conhecer o Studio,
-	já na aula experimental vi que era exatamente o que eu precisava. John sempre atencioso e muito detalhista, passou um treino
-	diferenciado e específico para minhas necessidades. Após um mês e meio de treino retornei ao médico para avaliação e meu
-	pé estava 100%, o próprio médico ficou surpreso com a rápida evolução e disse que ele não esperaria que pudesse ficar tão
-	bom. Finalmente tive alta médica, depois de 9 meses do acidente. Tive alta mas não vou parar o treino, só estou começando!
-	Agradeço ao profissionalismo do Studio e recomendo para todos!</p>
-	
-	<p>
-		<img src="/images/depoimento-leticia.jpg" >
-	</p>
-	<p><strong>Letícia</strong></p>
-	<p>Há dois anos estava em um momento que só engordava e odiava fazer exercícios físicos.</p>
-	<p>Então conheci o studio FitnessO2, logo vi que era totalmente diferente o propósito. O treino personalizado, a atenção, o foco, o espaço, os profissionais! De repente um caso de amor por esse studio!! Claro minha rotina mudou, eliminei muitos kg, ganhei massa, defini, muitas mudanças boas!! Nem acreditava, parecia tão impossível mas, aconteceu!! </p>
-	<p>Eu não saio daqui e daqui ninguém me tira, rs. ❤</p>
-	<p>Indico a todos que estão procurando algo que seja sustentável, dá resultado!!</p>
-	
-	<p>
-		<img src="/images/depoimento-julia.jpg" >
-	</p>
-	<p><strong>Júlia</strong></p>
-	<p>Há um tempo procurávamos, eu e meu marido, alguma atividade que nos proporcionasse saúde, qualidade de vida e que fosse prazerosa. </p>
-	<p>Em maio de 2017 conhecemos o Studio fitness O2! Além de um espaço bem equipado, contamos com profissionais que nos orienta de forma super competente e dedicada em exercícios individualmente pensados para o objetivo de cada um de nós!</p>
-	<p>Desde então, o gosto pelo treino e os bons resultados só aumentaram, encontramos tudo o que procurávamos!</p>
-	
-	<p>
-		<img src="/images/depoimento-andreia.jpg" >
-	</p>
-	<p><strong>Andréia</strong></p>
-	<p>Estou no Studio faz 2 anos, obtive ótimos resultados neste período.  É bem diferente de outras academias que frequentei, a preocupação constante com a postura correta durante o treino, o exercício  certo para cada perfil de aluno. Com treinamento personalizado tenho a certeza de um treino eficaz em resultados e sem lesões. Super recomendo!</p>
-	
-	<p>
-		<img src="/images/depoimento-edilene.jpg" >
-	</p>
-	<p><strong>Edilene</strong></p>
-	<p>Atendimento diferenciado, com orientação e supervisão adequada, num ambiente mega agradável!</p>
-	<p>Tudo que eu tanto procurei!</p>
-	<p>Passei por diversas academias e nenhuma outra me prendeu de forma tão apaixonante. </p>
-	<p>Jonathas é aquele profissional que vc respeita. Super capacitado, paciente e atencioso, o que me trouxe conforto e segurança na execução dos treinos, que não são nada entediantes. Sempre acompanhando de pertinho a execução e evolução. E na falta de motivação, ainda consegue trazer aquela energia extra necessária para os exercícios.</p>
-	<p>Agradeço muito toda atenção e profissionalismo!</p>
-	
-	<p>
-		<img src="/images/depoimento-patricia.jpg" >
-	</p>
-	<p><strong>Patricia</strong></p>
-	<p>O Studio e espetacular, muito bem equipado, além de estar focado  na obtenção  de resultados, sempre aliado ao bem estar do aluno.</p>
-	<p>Além da dedicação,  profissionalismo e motivação  dos professores, que foi o que fez a total diferença na escolha do Studio para alguém que como eu nunca gostou de treinar.</p>
-	<p>Estou há  um ano e indico com certeza.</p>
-	
+<div class="depoimentos grey darken-3 white-text" style="padding-top: 20px">
+	<h3 class="depoimentos-title">Depoimentos</h3>
+
+	<div #carouselWordsDepoimentos class="carousel carousel-slider" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
+		[materializeParams]="[{fullWidth: true, indicators: false}]" [materializeActions]="actions" id="carousel-depoimentos">
+		
+		<div class="carousel-item center-align">
+			<div>
+				<p>
+					<img src="/images/depoimento-cecilia.jpg" >
+				</p>
+				<p class="amber-text client-name"><strong>Cecília</strong></p>
+				<p>Cheguei ao Studio vindo de uma fratura no tornozelo direito e rompimento de ligamento no tornozelo esquerdo, depois de vários
+				meses de fisioterapia e depois academia mas os pés ainda não estavam bom. Por recomendação de uma amiga fui conhecer o Studio,
+				já na aula experimental vi que era exatamente o que eu precisava. John sempre atencioso e muito detalhista, passou um treino
+				diferenciado e específico para minhas necessidades. Após um mês e meio de treino retornei ao médico para avaliação e meu
+				pé estava 100%, o próprio médico ficou surpreso com a rápida evolução e disse que ele não esperaria que pudesse ficar tão
+				bom. Finalmente tive alta médica, depois de 9 meses do acidente. Tive alta mas não vou parar o treino, só estou começando!
+				Agradeço ao profissionalismo do Studio e recomendo para todos!</p>
+			</div>
+		</div>
+
+		<div class="carousel-item center-align" style="margin: 1rem 0;">
+			<div>
+				<p>
+					<img src="/images/depoimento-leticia.jpg">
+				</p>
+				<p class="amber-text client-name">
+					<strong>Letícia</strong>
+				</p>
+				<p>Há dois anos estava em um momento que só engordava e odiava fazer exercícios físicos.</p>
+				<p>Então conheci o studio FitnessO2, logo vi que era totalmente diferente o propósito. O treino personalizado, a atenção, o
+					foco, o espaço, os profissionais! De repente um caso de amor por esse studio!! Claro minha rotina mudou, eliminei muitos
+					kg, ganhei massa, defini, muitas mudanças boas!! Nem acreditava, parecia tão impossível mas, aconteceu!! </p>
+				<p>Eu não saio daqui e daqui ninguém me tira, rs. ❤</p>
+				<p>Indico a todos que estão procurando algo que seja sustentável, dá resultado!!</p>
+			</div>
+		</div>
+
+		<div class="carousel-item center-align" style="margin: 1rem 0;">
+			<div>
+				<p>
+					<img src="/images/depoimento-marcelo.jpg">
+				</p>
+				<p class="amber-text client-name">
+					<strong>Marcelo</strong>
+				</p>
+				<p>Estou treinando há mais de dois anos no Studio Fitness O2. Lá eu pude encontrar uma atenção e dedicação muito maiores que
+				em uma academia padrão. Isso certamente fez a diferença nos resultados e tornou-se um bom motivo para eu continuar a treinar.</p>
+			</div>
+		</div>
+
+		<div class="carousel-item center-align">
+			<div>
+				<p>
+					<img src="/images/depoimento-julia.jpg">
+				</p>
+				<p class="amber-text client-name">
+					<strong>Júlia</strong>
+				</p>
+				<p>Há um tempo procurávamos, eu e meu marido, alguma atividade que nos proporcionasse saúde, qualidade de vida e que fosse prazerosa.
+					</p>
+				<p>Em maio de 2017 conhecemos o Studio fitness O2! Além de um espaço bem equipado, contamos com profissionais que nos orienta
+					de forma super competente e dedicada em exercícios individualmente pensados para o objetivo de cada um de nós!</p>
+				<p>Desde então, o gosto pelo treino e os bons resultados só aumentaram, encontramos tudo o que procurávamos!</p>
+			</div>
+		</div>
+
+		<div class="carousel-item center-align" style="margin: 1rem 0;">
+			<div>
+				<p>
+					<img src="/images/depoimento-andreia.jpg">
+				</p>
+				<p class="amber-text client-name">
+					<strong>Andréia</strong>
+				</p>
+				<p>Estou no Studio faz 2 anos, obtive ótimos resultados neste período. É bem diferente de outras academias que frequentei, a
+					preocupação constante com a postura correta durante o treino, o exercício certo para cada perfil de aluno. Com treinamento
+					personalizado tenho a certeza de um treino eficaz em resultados e sem lesões. Super recomendo!</p>
+			</div>
+		</div>
+
+		<div class="carousel-item center-align" style="margin: 1rem 0;">
+			<div>
+				<p>
+					<img src="/images/depoimento-anderson.jpg">
+				</p>
+				<p class="amber-text client-name">
+					<strong>Anderson</strong>
+				</p>
+				<p>Me sinto muito feliz por fazer parte dessa academia principalmente por ter o acompanhamento de um treinador que conheço desde
+				a sua infância e que se tornou um amigo. O John (Jonathas) com seu profissionalismo, conseguiu me carregar, depois de 44
+				anos de sedentarismo para a academia, hoje me sinto uma nova pessoa. Comigo levei minha esposa, filho e sua namorada, nos
+				sentimos bem e o ambiente é super agradável, onde temos o prazer de estar 3 vezes por semana. Hoje me sinto mais disposto
+				e de bem comigo mesmo e sem dúvidas eu recomendo a todos que procuram um lugar diferenciado e com excelência.</p>
+			</div>
+		</div>
+
+		<div class="carousel-item center-align" style="margin: 1rem 0;">
+			<div>
+				<p>
+					<img src="/images/depoimento-edilene.jpg">
+				</p>
+				<p class="amber-text client-name">
+					<strong>Edilene</strong>
+				</p>
+				<p>Atendimento diferenciado, com orientação e supervisão adequada, num ambiente mega agradável!</p>
+				<p>Tudo que eu tanto procurei!</p>
+				<p>Passei por diversas academias e nenhuma outra me prendeu de forma tão apaixonante. </p>
+				<p>Jonathas é aquele profissional que vc respeita. Super capacitado, paciente e atencioso, o que me trouxe conforto e segurança
+					na execução dos treinos, que não são nada entediantes. Sempre acompanhando de pertinho a execução e evolução. E na falta
+					de motivação, ainda consegue trazer aquela energia extra necessária para os exercícios.</p>
+				<p>Agradeço muito toda atenção e profissionalismo!</p>
+			</div>
+		</div>
+
+		<div class="carousel-item center-align" style="margin: 1rem 0;">
+			<div>
+				<p>
+					<img src="/images/depoimento-patricia.jpg">
+				</p>
+				<p class="amber-text client-name">
+					<strong>Patricia</strong>
+				</p>
+				<p>O Studio e espetacular, muito bem equipado, além de estar focado na obtenção de resultados, sempre aliado ao bem estar do
+					aluno.</p>
+				<p>Além da dedicação, profissionalismo e motivação dos professores, que foi o que fez a total diferença na escolha do Studio
+					para alguém que como eu nunca gostou de treinar.</p>
+				<p>Estou há um ano e indico com certeza.</p>
+			</div>
+		</div>
+
+		<div class="carousel-item center-align" style="margin: 1rem 0;">
+			<div>
+				<p>
+					<img src="/images/depoimento-flavio.jpg">
+				</p>
+				<p class="amber-text client-name">
+					<strong>Flávio</strong>
+				</p>
+				<p>Treino no Studio O2 fitness há dois anos. Conheci pelo Facebook e estou plenamente satisfeito com os treinos. O John é um
+				excelente profissional que nos orienta não apenas pelo lado estético mas como também pelo lado funcional do exercício garantindo
+				resultados sem lesões. Ambiente super organizado e agradável de se treinar</p>
+			</div>
+		</div>
+
+	</div>
+
 </div>

@@ -9,7 +9,9 @@ import { MaterializeAction } from "angular2-materialize";
 export class HomeComponent implements OnInit {
 
   @ViewChild('carouselSmall') carouselSmall;
-  @ViewChild('carouselLarge') carouselLarge;
+  @ViewChild('carouselWords1') carouselWords1;
+  @ViewChild('carouselWords2') carouselWords2;
+  @ViewChild('carouselWordsDepoimentos') carouselWordsDepoimentos;
   actions = new EventEmitter<string|MaterializeAction>();
 
   constructor() { }

@@ -3,7 +3,6 @@
   flex-direction: column;
   text-align: center;
   display: flex;
-  padding: 30px 0;
 }
 .icon-block div {
   font-size: 48px;
@@ -12,17 +11,58 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+.carousel .carousel-item, .carousel .carousel-item > img {
+  height: 100%;
+}
+.vertical-middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
 .fs28 {
   font-size: 28px !important;
 }
+.abstract-about-us-title {
+  font-family: "Eras ITC", "Eras Light ITC",  sans-serif ;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+.abstract-who-we-are {
+  font-family: "Eras ITC", "Eras Light ITC",  sans-serif ;
+  padding-top: 20px;
+  padding-top: 20px;
+}
 .abstract-who-we-are, .depoimentos {
   font-size: 16px;
-  padding: 0 20px; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+}
+.depoimentos {
   text-align: center;
 }
 .depoimentos img {
   border-radius: 50%; 
   width: 100px;
+}
+.invite-interested-title {
+  margin-bottom: 20px; 
+  color: gray;
+}
+.invite-interested-button, .invite-interested-title, .depoimentos-title, .depoimentos .client-name {
+  text-transform: uppercase; 
+  font-family: 'Eras ITC', 'Eras Light ITC', sans-serif ; 
+  font-weight: bold;
+}
+.invite-interested-button {
+  padding: 10px 0;
+  height: auto;
+}
+#carousel-depoimentos {
+  height: 400px !important;
 }
 .row {
   margin-bottom: 0;
@@ -43,5 +83,10 @@
 @media (max-width: 993px) {
   .row-flex-on-large .img-bg-cover {
     height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  #carousel-depoimentos {
+    height: 600px !important;
   }
 }

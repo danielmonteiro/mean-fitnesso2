@@ -2,3 +2,9 @@ agm-map {
 	height: 400px;
 	width: 100%;
 }
+.contact-title {
+  text-transform: uppercase; 
+  font-family: 'Eras ITC', 'Eras Light ITC', sans-serif ; 
+  font-weight: bold;
+  color: gray;
+}
