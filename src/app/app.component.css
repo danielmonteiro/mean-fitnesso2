@@ -52,3 +52,8 @@ collapsible-body p a {
 	color: #777;
 	display: block;
 }
+@media (max-width: 600px) {
+  nav .brand-logo {
+    left: 5%;
+  }
+}
