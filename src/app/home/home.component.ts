@@ -17,6 +17,15 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // example of a hacky way to add an image to the carousel dynamically
+    window.setInterval(() => {
+      this.next();
+    }, 10000);
+  }
+
+  next() {
+    // Move to next slide. This is not working
+    this.actions.emit({ action: 'carousel', params: ['next'] });
   }
 
 }

@@ -30,11 +30,15 @@
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
+  text-align: justify;
 }
 .abstract-who-we-are {
   font-family: "Eras ITC", "Eras Light ITC",  sans-serif ;
   padding-top: 20px;
   padding-top: 20px;
+}
+.abstract-who-we-are p {
+  text-align: justify;
 }
 .abstract-who-we-are, .depoimentos {
   font-size: 16px;
@@ -51,6 +55,7 @@
 .invite-interested-title {
   margin-bottom: 20px; 
   color: gray;
+  font-size: 2.2rem;
 }
 .invite-interested-button, .invite-interested-title, .depoimentos-title, .depoimentos .client-name {
   text-transform: uppercase; 

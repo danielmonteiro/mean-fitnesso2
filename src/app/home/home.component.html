@@ -137,7 +137,7 @@
 
 <!-- Resumo quem somos -->
 <div class="abstract-who-we-are">
-	<h5 class="abstract-about-us-title">TREINAMENTO PERSONALIZADO</h5>
+	<h5 class="abstract-about-us-title">TREINAMENTO PERSONALIZADO s</h5>
 	<p>O Studio Fitness O2 oferece treinamento adequado para cada indivíduo considerando seu histórico e objetivos. Atendendo iniciantes, idosos, pessoas em reabilitação ou até mesmo atletas, sempre adequando o plano de trabalho à real necessidade do aluno. </p>
 	<h5 class="abstract-about-us-title">TREINO COM FOCO EM QUALIDADE DE VIDA</h5>
 	<p>A filosofia de trabalho oferecido no Studio Fitness O2 engloba a orientação sobre hábitos alimentares e estilo de vida, para que o treino seja um aliado em uma trajetória de mudança de comportamento em prol de uma vida mais saudável. </p> 
@@ -149,10 +149,10 @@
 <div class="row block-1">
 	<div class="col s12 amber center-align">
 		<div class="icon-block center-align" style="padding: 0 20px 30px;">
-			<h3 class="invite-interested-title">Treine <br>com a gente</h3>
+			<h3 class="invite-interested-title">Treine com a gente</h3>
 			<p>Nossos alunos são homens e mulheres que, independentemente da idade, buscam um estilo de vida mais saudável; querem o bem-estar, viver sem dores e disposição para aproveitar a vida.</p>
 			<p>Oferecemos treinos personalizados, o que garante resultados mais eficazes em menos tempo, sempre indo além do objetivo do aluno. Venha conhecer nosso trabalho!</p>
-			<a class="btn white amber-text invite-interested-button" href="#">Treine grátis</a>
+			<a class="btn white amber-text invite-interested-button" href="#">Experimente uma semana Grátis</a>
 		</div>
 	</div>
 	<div class="col s12 m6 img-bg-cover" style="background: url(assets/img/sobre-nos-10.jpg); background-size: cover;"></div>
@@ -181,7 +181,7 @@
 	<h3 class="depoimentos-title">Depoimentos</h3>
 
 	<div #carouselWordsDepoimentos class="carousel carousel-slider" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
-		[materializeParams]="[{fullWidth: true, indicators: false}]" [materializeActions]="actions" id="carousel-depoimentos">
+		[materializeParams]="[{fullWidth: true, indicators: false, interval: 1000}]" [materializeActions]="actions" id="carousel-depoimentos">
 		
 		<div class="carousel-item center-align">
 			<div>
@@ -326,3 +326,5 @@
 	</div>
 
 </div>
+
+<app-footer showContact=true></app-footer>

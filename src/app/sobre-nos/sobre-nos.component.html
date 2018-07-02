@@ -6,47 +6,12 @@
     </div>
 </div>
 
-<div #carousel class="carousel carousel-slider" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel" [materializeParams]="[{fullWidth: true, indicators: true}]"
-    [materializeActions]="actions">
-
-    <div class="carousel-item white-text" href="#one!">
-        <img src="assets/img/sobre-nos-4.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-        <img src="assets/img/sobre-nos-5.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-        <img src="assets/img/sobre-nos-6.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-        <img src="assets/img/sobre-nos-7.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-        <img src="assets/img/sobre-nos-8.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-        <img src="assets/img/sobre-nos-9.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-        <img src="assets/img/sobre-nos-10.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-        <img src="assets/img/sobre-nos-11.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-        <img src="assets/img/sobre-nos-12.jpg">
-    </div>
-    <div class="carousel-item white-text" href="#one!">
-        <img src="assets/img/sobre-nos-13.jpg">
-    </div>
-</div>
-
 <div class="container">
     <h3 class="center about-us-title">Quem somos</h3>
 </div>
 
 <div class="row no-margin fs-16">
-    <div class="col s12" style="padding: 20px;">
+    <div class="col s12" style="padding: 20px; text-align: justify;">
         <p>Fundado em 2014, em São José dos Campos/SP, o Studio Fitness o2 apresenta um novo modelo de negócio e de conceito de treinamento.
         Um ambiente moderno, completo, que visa a promoção da qualidade de vida a partir de treinos que aliam eficiência e segurança,
         sem perder o foco em resultados.</p>
@@ -66,56 +31,13 @@
 
 <!--   Icon Section   -->
 <div class="row block-1 flex-medium">
-	<!-- CAROUSEL -->
-	<div #carouselSmall1 class="carousel carousel-slider" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
-		[materializeParams]="[{fullWidth: true, indicators: true}]" [materializeActions]="actions" style="flex: 1;">
-
-		<div class="carousel-item white-text" href="#one!">
-			<img src="assets/img/sobre-nos-12.jpg" class="responsive-img">
-		</div>
-		<div class="carousel-item white-text" href="#two!">
-			<img src="assets/img/sobre-nos-14.jpg" class="responsive-img">
-		</div>
-		<div class="carousel-item white-text" href="#three!">
-			<img src="assets/img/sobre-nos-2.jpg" class="responsive-img">
-		</div>
-		<div class="carousel-item white-text" href="#four!">
-			<img src="assets/img/sobre-nos-10.jpg" class="responsive-img">
-		</div>
-	</div>
-
-	<div class="icon-block grey darken-3" style="flex: 1;">
-		<div #carouselWords1 class="carousel carousel-slider" [ngClass]="{ 'initialized': showInitialized }" materialize="carousel"
-		[materializeParams]="[{fullWidth: true, indicators: false}]" [materializeActions]="actions">
-		
-			<div class="carousel-item center-align">
-				<div class="vertical-middle fs28">
-					<span class="amber-text">Reabilitação</span> <span class="grey-text text-lighten-2">funcional e esportiva</span>
-				</div>
-			</div>
-			<div class="carousel-item amber-text" style="margin: 1rem 0;">
-				<div class="vertical-middle fs28">
-					<span class="grey-text text-lighten-2">Preparação</span> <span class="amber-text">Esportiva</span>
-				</div>
-			</div>
-			<div class="carousel-item grey-text text-lighten-2 center-align">
-				<div class="vertical-middle fs28">
-					<span class="amber-text">Prevenção</span> <span class="grey-text text-lighten-2">de Lesão</span>
-				</div>
-			</div>
-			<div class="carousel-item amber-text" style="margin: 1rem 0;">
-				<div class="vertical-middle fs28">
-					<span class="grey-text text-lighten-2">Ganho de</span> <span class="amber-text">Massa Muscular</span>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
+	<div class="carousel-item white-text" href="#one!">
+        <img src="assets/img/sobre-nos-12.jpg" class="responsive-img">
+    </div>
 </div>
 
 <div class="row no-margin fs-16">
-    <div class="col s12" style="padding: 20px;">
+    <div class="col s12" style="padding: 20px; text-align: justify;">
         <h3 class="center about-us-title">MISSÃO</h3>
         <p>Oferecer um novo conceito de treinamento físico, onde o atendimento personalizado possibilita o conhecimento do indivíduo
         e de suas necessidades, possibilitando a criação de planos de trabalho onde os objetivos sejam atingidos de forma mais assertiva
@@ -134,3 +56,5 @@
         <p><strong>UNIÃO</strong> como objetivo maior, fazendo com que a busca de todos os alunos tenha o único objetivo: mais saúde e qualidade de vida.</p>
     </div>
 </div>
+
+<app-footer showContact=true></app-footer>

@@ -6,6 +6,8 @@ import { Observable } from "rxjs/Observable";
 @Injectable()
 export class ContactService {
 
+	public showContact = true;
+
 	constructor(private http: Http) { }
 
 	saveContact(name, email, phone, message, heard = null, reply = null) {
